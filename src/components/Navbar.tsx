@@ -33,7 +33,7 @@ export default function Navbar() {
                         href="/contact"
                         className="rounded-md border border-signal/40 px-4 py-2 text-sm text-signal transition-colors hover:bg-signal/10"
                     >
-                        Start a project
+                        Book a free discovery call
                     </Link>
                 </nav>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
                         onClick={() => setOpen(false)}
                         className="rounded-md border border-signal/40 px-4 py-2 text-center text-sm text-signal"
                     >
-                        Start a project
+                        Book a free discovery call
                     </Link>
                 </nav>
             )}
