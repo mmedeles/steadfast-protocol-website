@@ -5,9 +5,9 @@ import ConnectionTerminal from "@/components/ConnectionTerminal";
 import FadeIn from "@/components/FadeIn";
 
 const trustSignals = [
-    "A written proposal after the discovery call",
-    "You see what's being built before you commit",
-    "You own the code and infrastructure — no rented templates",
+    "You get it in writing before you spend a cent",
+    "You’ll watch it come together — not just get a bill",
+    "Everything we build is yours. No rented templates",
 ];
 
 const services = [
@@ -70,17 +70,16 @@ export default function Home() {
                         <div>
                             <FadeIn>
                                 <p className="font-mono text-xs text-muted">
-                                    custom software · AI tooling · workflow automation
+                                    Software, AI tooling, automation — that’s the job.
                                 </p>
                                 <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-text md:text-5xl">
-                                    Software built to hold up under real-world use — not just
-                                    look good in a demo.
+                                    Demos are easy. We build what comes after.
                                 </h1>
                             </FadeIn>
                             <p className="mt-6 text-base text-muted md:text-lg">
-                                Steadfast Protocol designs and ships custom software, AI tooling,
-                                and workflow automation for teams who need it to keep working,
-                                not just keep impressing.
+                                We build custom software, AI tools, and automation for people
+                                who need it to actually work — not just look good in a pitch
+                                meeting.
                             </p>
                             <div className="mt-8 flex flex-wrap items-center gap-6">
                                 <Link
@@ -182,10 +181,10 @@ export default function Home() {
                             <p className="font-mono text-xs text-muted">about</p>
                         </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            Steadfast Protocol is built on a simple idea: software should be
-                            dependable first, impressive second. We favor plain, maintainable
-                            engineering over clever tricks that are hard to support six months
-                            from now.
+                            We’d rather build something boring that keeps working than
+                            something clever that impresses for a week and breaks the next.
+                            You’re the one who has to live with it — so that’s who we build
+                            for.
                         </p>
                         <Link
                             href="/about"
@@ -203,9 +202,9 @@ export default function Home() {
                             based in Bismarck, ND
                         </div>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            Steadfast Protocol is based in Bismarck, North Dakota, and works
-                            with clients across the state. Meetings happen in person or fully
-                            remote, depending on what works best for you.
+                            We’re in Bismarck, North Dakota — not a co-working space in some
+                            “tech hub” pretending otherwise. We work with clients across the
+                            state, in person if that’s easier or fully remote if it’s not.
                         </p>
                     </div>
                 </section>
@@ -218,8 +217,9 @@ export default function Home() {
                             </h2>
                         </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            Book a free discovery call and we'll figure out the right scope
-                            together.
+                            Grab some time on the calendar and tell us what you’re dealing
+                            with. The call’s free, and there’s no pitch waiting at the end of
+                            it.
                         </p>
                         <Link
                             href="/contact"
