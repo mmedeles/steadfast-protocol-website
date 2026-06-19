@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Services | Steadfast Protocol",
@@ -78,10 +79,12 @@ export default function Services() {
             <Navbar />
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-16 text-center">
-                    <p className="font-mono text-xs text-muted">services</p>
-                    <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
-                        What we build
-                    </h1>
+                    <FadeIn>
+                        <p className="font-mono text-xs text-muted">services</p>
+                        <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
+                            What we build
+                        </h1>
+                    </FadeIn>
                     <p className="mt-6 text-base text-muted md:text-lg">
                         Steadfast Protocol builds custom software, AI tooling, and workflow
                         automation for teams who need their systems to hold up — whether
@@ -92,55 +95,60 @@ export default function Services() {
 
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-4xl space-y-10 px-6 py-20">
-                        {services.map((service) => (
-                            <div
-                                key={service.title}
-                                className="rounded-lg border border-line bg-surface p-8"
-                            >
-                                <p className="font-mono text-xs text-signal">{service.tag}</p>
-                                <h2 className="mt-3 font-display text-2xl text-text">
-                                    {service.title}
-                                </h2>
-                                <p className="mt-4 text-sm text-muted md:text-base">
-                                    {service.description}
-                                </p>
-                                <p className="mt-6 border-t border-line pt-4 text-sm text-muted">
-                                    <span className="font-mono text-xs tracking-wide text-signal">
-                                        good fit if —
-                                    </span>{" "}
-                                    {service.goodFit}
-                                </p>
-                            </div>
+                        {services.map((service, i) => (
+                            <FadeIn key={service.title} delay={i * 0.1}>
+                                <div className="rounded-lg border border-line bg-surface p-8 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-signal/40 hover:shadow-lg hover:shadow-signal/15">
+                                    <p className="font-mono text-xs text-signal">
+                                        {service.tag}
+                                    </p>
+                                    <h2 className="mt-3 font-display text-2xl text-text">
+                                        {service.title}
+                                    </h2>
+                                    <p className="mt-4 text-sm text-muted md:text-base">
+                                        {service.description}
+                                    </p>
+                                    <p className="mt-6 border-t border-line pt-4 text-sm text-muted">
+                                        <span className="font-mono text-xs tracking-wide text-signal">
+                                            good fit if —
+                                        </span>{" "}
+                                        {service.goodFit}
+                                    </p>
+                                </div>
+                            </FadeIn>
                         ))}
                     </div>
                 </section>
 
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-4xl px-6 py-20">
-                        <p className="font-mono text-xs text-muted">process</p>
-                        <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
-                            How a project runs
-                        </h2>
+                        <FadeIn>
+                            <p className="font-mono text-xs text-muted">process</p>
+                            <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
+                                How a project runs
+                            </h2>
+                        </FadeIn>
 
                         <ol className="mt-14 space-y-10">
                             {steps.map((step, i) => (
-                                <li key={step.code} className="relative flex gap-6">
-                                    <div className="flex flex-col items-center">
-                                        <span className="z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink font-mono text-xs text-signal">
-                                            {i + 1}
-                                        </span>
-                                        {i < steps.length - 1 && (
-                                            <span className="mt-2 w-px flex-1 bg-line" />
-                                        )}
-                                    </div>
-                                    <div className="pb-2">
-                                        <p className="font-mono text-xs tracking-wide text-signal">
-                                            {step.code}
-                                        </p>
-                                        <p className="mt-2 text-sm text-muted md:text-base">
-                                            {step.description}
-                                        </p>
-                                    </div>
+                                <li key={step.code} className="relative">
+                                    <FadeIn delay={i * 0.1} className="flex gap-6">
+                                        <div className="flex flex-col items-center">
+                                            <span className="z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink font-mono text-xs text-signal">
+                                                {i + 1}
+                                            </span>
+                                            {i < steps.length - 1 && (
+                                                <span className="mt-2 w-px flex-1 bg-line" />
+                                            )}
+                                        </div>
+                                        <div className="pb-2">
+                                            <p className="font-mono text-xs tracking-wide text-signal">
+                                                {step.code}
+                                            </p>
+                                            <p className="mt-2 text-sm text-muted md:text-base">
+                                                {step.description}
+                                            </p>
+                                        </div>
+                                    </FadeIn>
                                 </li>
                             ))}
                         </ol>
@@ -149,18 +157,21 @@ export default function Services() {
 
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-                        <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
-                            Ready to talk through what you need?
-                        </h2>
+                        <FadeIn>
+                            <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
+                                Ready to talk through what you need?
+                            </h2>
+                        </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
                             Book a free discovery call, or reach out directly.
                         </p>
                         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                             <Link
                                 href="/contact"
-                                className="rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
+                                className="group relative inline-block overflow-hidden rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
                             >
-                                Book a free discovery call
+                                <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+                                <span className="relative">Book a free discovery call</span>
                             </Link>
                             <a
                                 href="mailto:mmedeles@steadfastprotocol.com"

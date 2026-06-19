@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ConnectionTerminal from "@/components/ConnectionTerminal";
+import FadeIn from "@/components/FadeIn";
 
 const trustSignals = [
     "A written proposal after the discovery call",
@@ -67,13 +68,15 @@ export default function Home() {
                 <section className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28">
                     <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
                         <div>
-                            <p className="font-mono text-xs text-muted">
-                                custom software · AI tooling · workflow automation
-                            </p>
-                            <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-text md:text-5xl">
-                                Software built to hold up under real-world use — not just look
-                                good in a demo.
-                            </h1>
+                            <FadeIn>
+                                <p className="font-mono text-xs text-muted">
+                                    custom software · AI tooling · workflow automation
+                                </p>
+                                <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-text md:text-5xl">
+                                    Software built to hold up under real-world use — not just
+                                    look good in a demo.
+                                </h1>
+                            </FadeIn>
                             <p className="mt-6 text-base text-muted md:text-lg">
                                 Steadfast Protocol designs and ships custom software, AI tooling,
                                 and workflow automation for teams who need it to keep working,
@@ -82,9 +85,10 @@ export default function Home() {
                             <div className="mt-8 flex flex-wrap items-center gap-6">
                                 <Link
                                     href="/contact"
-                                    className="rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
+                                    className="group relative inline-block overflow-hidden rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
                                 >
-                                    Book a free discovery call
+                                    <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+                                    <span className="relative">Book a free discovery call</span>
                                 </Link>
                                 <Link
                                     href="/services"
@@ -109,25 +113,28 @@ export default function Home() {
 
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-6xl px-6 py-20">
-                        <p className="font-mono text-xs text-muted">what we do</p>
-                        <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
-                            Where we help
-                        </h2>
+                        <FadeIn>
+                            <p className="font-mono text-xs text-muted">what we do</p>
+                            <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
+                                Where we help
+                            </h2>
+                        </FadeIn>
 
                         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-                            {services.map((service) => (
-                                <div
-                                    key={service.title}
-                                    className="rounded-lg border border-line bg-surface p-6"
-                                >
-                                    <p className="font-mono text-xs text-signal">{service.tag}</p>
-                                    <h3 className="mt-2 font-display text-lg text-text">
-                                        {service.title}
-                                    </h3>
-                                    <p className="mt-2 text-sm text-muted">
-                                        {service.description}
-                                    </p>
-                                </div>
+                            {services.map((service, i) => (
+                                <FadeIn key={service.title} delay={i * 0.1}>
+                                    <div className="h-full rounded-lg border border-line bg-surface p-6 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-signal/40 hover:shadow-lg hover:shadow-signal/15">
+                                        <p className="font-mono text-xs text-signal">
+                                            {service.tag}
+                                        </p>
+                                        <h3 className="mt-2 font-display text-lg text-text">
+                                            {service.title}
+                                        </h3>
+                                        <p className="mt-2 text-sm text-muted">
+                                            {service.description}
+                                        </p>
+                                    </div>
+                                </FadeIn>
                             ))}
                         </div>
                     </div>
@@ -135,17 +142,20 @@ export default function Home() {
 
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-6xl px-6 py-20">
-                        <p className="font-mono text-xs text-muted">process</p>
-                        <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
-                            How a project runs
-                        </h2>
+                        <FadeIn>
+                            <p className="font-mono text-xs text-muted">process</p>
+                            <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
+                                How a project runs
+                            </h2>
+                        </FadeIn>
 
                         <div className="relative mt-14">
                             <div className="absolute top-4 right-0 left-0 hidden h-px bg-line md:block" />
                             <div className="flex flex-col gap-8 md:flex-row md:justify-between md:gap-4">
                                 {steps.map((step, i) => (
-                                    <div
+                                    <FadeIn
                                         key={step.code}
+                                        delay={i * 0.1}
                                         className="flex items-start gap-4 md:flex-1 md:flex-col md:items-start md:gap-0"
                                     >
                                         <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink font-mono text-xs text-signal md:mb-4">
@@ -159,7 +169,7 @@ export default function Home() {
                                                 {step.description}
                                             </p>
                                         </div>
-                                    </div>
+                                    </FadeIn>
                                 ))}
                             </div>
                         </div>
@@ -168,7 +178,9 @@ export default function Home() {
 
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-                        <p className="font-mono text-xs text-muted">about</p>
+                        <FadeIn>
+                            <p className="font-mono text-xs text-muted">about</p>
+                        </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
                             Steadfast Protocol is built on a simple idea: software should be
                             dependable first, impressive second. We favor plain, maintainable
@@ -200,18 +212,21 @@ export default function Home() {
 
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-                        <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
-                            Ready to talk through your project?
-                        </h2>
+                        <FadeIn>
+                            <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
+                                Ready to talk through your project?
+                            </h2>
+                        </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
                             Book a free discovery call and we'll figure out the right scope
                             together.
                         </p>
                         <Link
                             href="/contact"
-                            className="mt-8 inline-block rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
+                            className="group relative mt-8 inline-block overflow-hidden rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
                         >
-                            Book a free discovery call
+                            <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+                            <span className="relative">Book a free discovery call</span>
                         </Link>
                     </div>
                 </section>

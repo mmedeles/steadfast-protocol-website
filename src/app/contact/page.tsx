@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Contact | Steadfast Protocol",
@@ -20,10 +21,12 @@ export default function Contact() {
             <Navbar />
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-16 text-center">
-                    <p className="font-mono text-xs text-muted">contact</p>
-                    <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
-                        Let's talk about what you need.
-                    </h1>
+                    <FadeIn>
+                        <p className="font-mono text-xs text-muted">contact</p>
+                        <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
+                            Let's talk about what you need.
+                        </h1>
+                    </FadeIn>
                     <p className="mt-6 text-base text-muted md:text-lg">
                         The first step is always a free discovery call — no obligation, in
                         person if you're near Bismarck, ND, or remote from anywhere.
@@ -33,33 +36,39 @@ export default function Contact() {
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-20">
                         <div className="grid gap-6 sm:grid-cols-2">
-                            <a
-                                href="mailto:mmedeles@steadfastprotocol.com"
-                                className="rounded-lg border border-line bg-surface p-8 transition-colors hover:border-signal/40"
-                            >
-                                <p className="font-mono text-xs text-muted">email</p>
-                                <p className="mt-3 text-lg text-text">
-                                    mmedeles@steadfastprotocol.com
-                                </p>
-                            </a>
+                            <FadeIn delay={0} className="h-full">
+                                <a
+                                    href="mailto:mmedeles@steadfastprotocol.com"
+                                    className="block h-full rounded-lg border border-line bg-surface p-8 transition-colors hover:border-signal/40"
+                                >
+                                    <p className="font-mono text-xs text-muted">email</p>
+                                    <p className="mt-3 text-lg text-text">
+                                        mmedeles@steadfastprotocol.com
+                                    </p>
+                                </a>
+                            </FadeIn>
 
-                            <a
-                                href="tel:+17022725337"
-                                className="rounded-lg border border-line bg-surface p-8 transition-colors hover:border-signal/40"
-                            >
-                                <p className="font-mono text-xs text-muted">phone</p>
-                                <p className="mt-3 text-lg text-text">(702) 272-5337</p>
-                            </a>
+                            <FadeIn delay={0.1} className="h-full">
+                                <a
+                                    href="tel:+17022725337"
+                                    className="block h-full rounded-lg border border-line bg-surface p-8 transition-colors hover:border-signal/40"
+                                >
+                                    <p className="font-mono text-xs text-muted">phone</p>
+                                    <p className="mt-3 text-lg text-text">(702) 272-5337</p>
+                                </a>
+                            </FadeIn>
                         </div>
                     </div>
                 </section>
 
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-3xl px-6 py-20">
-                        <p className="font-mono text-xs text-muted">what to expect</p>
-                        <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
-                            How it starts
-                        </h2>
+                        <FadeIn>
+                            <p className="font-mono text-xs text-muted">what to expect</p>
+                            <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
+                                How it starts
+                            </h2>
+                        </FadeIn>
 
                         <ul className="mt-8 space-y-3 font-mono text-sm text-muted">
                             {expectations.map((item) => (
