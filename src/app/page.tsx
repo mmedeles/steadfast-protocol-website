@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ConnectionTerminal from "@/components/ConnectionTerminal";
 import FadeIn from "@/components/FadeIn";
+import ProcessConnectorLine from "@/components/ProcessConnectorLine";
+import ProcessTimeline from "@/components/ProcessTimeline";
 
 const trustSignals = [
     "You get it in writing before you spend a cent",
@@ -149,28 +151,8 @@ export default function Home() {
                         </FadeIn>
 
                         <div className="relative mt-14">
-                            <div className="absolute top-4 right-0 left-0 hidden h-px bg-line md:block" />
-                            <div className="flex flex-col gap-8 md:flex-row md:justify-between md:gap-4">
-                                {steps.map((step, i) => (
-                                    <FadeIn
-                                        key={step.code}
-                                        delay={i * 0.1}
-                                        className="flex items-start gap-4 md:flex-1 md:flex-col md:items-start md:gap-0"
-                                    >
-                                        <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink font-mono text-xs text-signal md:mb-4">
-                                            {i + 1}
-                                        </span>
-                                        <div>
-                                            <p className="font-mono text-xs tracking-wide text-signal">
-                                                {step.code}
-                                            </p>
-                                            <p className="mt-1 text-sm text-muted">
-                                                {step.description}
-                                            </p>
-                                        </div>
-                                    </FadeIn>
-                                ))}
-                            </div>
+                            <ProcessConnectorLine />
+                            <ProcessTimeline steps={steps} />
                         </div>
                     </div>
                 </section>

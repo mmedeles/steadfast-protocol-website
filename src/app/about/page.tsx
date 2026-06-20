@@ -24,7 +24,7 @@ const principles = [
     {
         label: "CONNECTED",
         title: "The relationship doesn't end at launch.",
-        body: "Launch day isn't the finish line — it's when the software starts actually getting used, which is when real questions come up. We stay reachable after deployment instead of disappearing once the invoice clears.",
+        body: "Launch day isn't the finish line, it's when the solution starts actually getting used, which is when real questions come up. We stay reachable after deployment instead of disappearing once the invoice clears.",
     },
 ];
 
@@ -37,12 +37,12 @@ export default function About() {
                     <FadeIn>
                         <p className="font-mono text-xs text-muted">about</p>
                         <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
-                            We build software that's meant to hold, not just to launch.
+                            We build solutions that's meant to hold, not just to launch.
                         </h1>
                     </FadeIn>
                     <p className="mt-6 text-base text-muted md:text-lg">
                         Steadfast Protocol exists for the gap between a working demo and
-                        software people actually depend on. That's the bar we build to on
+                        tools people actually depend on. That's the bar we build to on
                         every project, whether it's custom software, AI tooling, or
                         workflow automation.
                     </p>
@@ -83,7 +83,7 @@ export default function About() {
                         <p className="mt-4 text-base text-muted md:text-lg">
                             We work the way most good working relationships do: a real
                             conversation up front, a clear written plan, and regular check-ins
-                            while the work is happening — no surprise invoices, no
+                            while the work is happening. No surprise invoices, no
                             disappearing for weeks at a time. We're based in Bismarck, North
                             Dakota, and work with clients across the state, in person when
                             that's useful and fully remote when it's not.
