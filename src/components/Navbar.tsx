@@ -85,18 +85,18 @@ export default function Navbar() {
             }`}
         >
             <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-                <div className="flex items-center gap-12">
+                <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center font-mono">
                         <Image
                             src="/logo/sp-horizontal-dark.svg"
                             alt="Steadfast Protocol"
-                            height={44}
-                            width={154}
-                            className="h-11 w-auto"
+                            height={52}
+                            width={182}
+                            className="h-[52px] w-auto"
                         />
                     </Link>
 
-                    <nav className="hidden items-center gap-10 md:flex">
+                    <nav className="hidden items-center gap-6 md:flex">
                         {navLinks.map((link) => (
                             <NavLink key={link.href} href={link.href} label={link.label} />
                         ))}
@@ -104,7 +104,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex items-center justify-end gap-4">
-                    <Link href="/contact" className={`hidden md:inline-flex ${ctaClasses}`}>
+                    <Link href="/contact" className={`ml-auto hidden md:inline-flex ${ctaClasses}`}>
                         Book a free discovery call
                     </Link>
 
