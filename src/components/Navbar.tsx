@@ -84,22 +84,24 @@ export default function Navbar() {
                     : "border-b border-transparent bg-transparent"
             }`}
         >
-            <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr_auto] items-center gap-4 px-6 py-4">
-                <Link href="/" className="flex items-center font-mono">
-                    <Image
-                        src="/logo/sp-horizontal-dark.svg"
-                        alt="Steadfast Protocol"
-                        height={32}
-                        width={112}
-                        className="h-8 w-auto"
-                    />
-                </Link>
+            <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+                <div className="flex items-center gap-12">
+                    <Link href="/" className="flex items-center font-mono">
+                        <Image
+                            src="/logo/sp-horizontal-dark.svg"
+                            alt="Steadfast Protocol"
+                            height={44}
+                            width={154}
+                            className="h-11 w-auto"
+                        />
+                    </Link>
 
-                <nav className="hidden items-center justify-center gap-10 md:flex">
-                    {navLinks.map((link) => (
-                        <NavLink key={link.href} href={link.href} label={link.label} />
-                    ))}
-                </nav>
+                    <nav className="hidden items-center gap-10 md:flex">
+                        {navLinks.map((link) => (
+                            <NavLink key={link.href} href={link.href} label={link.label} />
+                        ))}
+                    </nav>
+                </div>
 
                 <div className="flex items-center justify-end gap-4">
                     <Link href="/contact" className={`hidden md:inline-flex ${ctaClasses}`}>
