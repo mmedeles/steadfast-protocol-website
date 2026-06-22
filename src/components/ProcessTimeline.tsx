@@ -1,9 +1,18 @@
 "use client";
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { Phone, FileText, Wrench, Rocket, RefreshCw, type LucideIcon } from "lucide-react";
 import { STEPS_BASE_DELAY, STEP_STAGGER } from "@/components/ProcessConnectorLine";
 
 type Step = { code: string; description: string };
+
+const stepIcons: Record<string, LucideIcon> = {
+    HANDSHAKE: Phone,
+    SCOPE: FileText,
+    BUILD: Wrench,
+    DEPLOY: Rocket,
+    SUSTAIN: RefreshCw,
+};
 
 export default function ProcessTimeline({ steps }: { steps: Step[] }) {
     const prefersReducedMotion = useReducedMotion();
@@ -47,17 +56,19 @@ export default function ProcessTimeline({ steps }: { steps: Step[] }) {
             viewport={{ once: true }}
             variants={containerVariants}
         >
-            {steps.map((step, i) => (
+            {steps.map((step) => {
+                const Icon = stepIcons[step.code];
+                return (
                 <motion.div
                     key={step.code}
                     className="flex items-start gap-4 md:flex-1 md:flex-col md:items-start md:gap-0"
                     variants={stepVariants}
                 >
                     <motion.span
-                        className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink font-mono text-xs text-signal md:mb-4"
+                        className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink text-signal md:mb-4"
                         variants={circleVariants}
                     >
-                        {i + 1}
+                        <Icon size={16} />
                     </motion.span>
                     <div>
                         <p className="font-mono text-xs tracking-wide text-signal">
@@ -66,7 +77,8 @@ export default function ProcessTimeline({ steps }: { steps: Step[] }) {
                         <p className="mt-1 text-sm text-muted">{step.description}</p>
                     </div>
                 </motion.div>
-            ))}
+                );
+            })}
         </motion.div>
     );
 }

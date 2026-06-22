@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
 
 const serviceLinks = ["Custom Software", "AI Tooling", "Workflow Automation", "Consulting"];
 
@@ -22,9 +24,13 @@ export default function Footer() {
             <div className="mx-auto max-w-6xl px-6 py-16">
                 <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] md:gap-8">
                     <div>
-                        <p className="font-mono text-sm text-text">
-                            steadfast<span className="text-signal">_</span>protocol
-                        </p>
+                        <Image
+                            src="/logo/sp-horizontal-dark.svg"
+                            alt="Steadfast Protocol"
+                            height={28}
+                            width={98}
+                            className="h-7 w-auto"
+                        />
                         <p className="mt-3 max-w-xs text-sm text-muted">
                             Custom software, AI tooling, and workflow automation — built in
                             Bismarck, ND.
@@ -40,7 +46,14 @@ export default function Footer() {
                         <ul className="mt-4 space-y-3 text-sm">
                             {serviceLinks.map((label) => (
                                 <li key={label}>
-                                    <Link href="/services" className={linkClasses}>
+                                    <Link
+                                        href="/services"
+                                        className={`group inline-flex items-center gap-1 ${linkClasses}`}
+                                    >
+                                        <ChevronRight
+                                            size={14}
+                                            className="opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                                        />
                                         {label}
                                     </Link>
                                 </li>

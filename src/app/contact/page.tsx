@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
@@ -77,25 +78,31 @@ export default function Contact() {
                                         <div className="mt-4 space-y-4">
                                             <a
                                                 href="mailto:mmedeles@steadfastprotocol.com"
-                                                className="group block border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
+                                                className="group flex items-start gap-3 border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
                                             >
-                                                <p className="font-mono text-xs text-muted">
-                                                    email
-                                                </p>
-                                                <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
-                                                    mmedeles@steadfastprotocol.com
-                                                </p>
+                                                <Mail size={24} className="mt-0.5 shrink-0 text-signal" />
+                                                <span>
+                                                    <p className="font-mono text-xs text-muted">
+                                                        email
+                                                    </p>
+                                                    <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
+                                                        mmedeles@steadfastprotocol.com
+                                                    </p>
+                                                </span>
                                             </a>
                                             <a
                                                 href="tel:+17022725337"
-                                                className="group block border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
+                                                className="group flex items-start gap-3 border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
                                             >
-                                                <p className="font-mono text-xs text-muted">
-                                                    phone
-                                                </p>
-                                                <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
-                                                    (702) 272-5337
-                                                </p>
+                                                <Phone size={24} className="mt-0.5 shrink-0 text-signal" />
+                                                <span>
+                                                    <p className="font-mono text-xs text-muted">
+                                                        phone
+                                                    </p>
+                                                    <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
+                                                        (702) 272-5337
+                                                    </p>
+                                                </span>
                                             </a>
                                         </div>
                                     </div>
@@ -106,12 +113,15 @@ export default function Contact() {
                                         <p className="font-mono text-xs text-signal">
                                             // based in
                                         </p>
-                                        <p className="mt-3 text-sm text-muted">
-                                            Bismarck, ND
-                                            <br />
-                                            Available in-person across North Dakota
-                                            <br />
-                                            or fully remote anywhere.
+                                        <p className="mt-3 flex items-start gap-2 text-sm text-muted">
+                                            <MapPin size={20} className="mt-0.5 shrink-0 text-muted" />
+                                            <span>
+                                                Bismarck, ND
+                                                <br />
+                                                Available in-person across North Dakota
+                                                <br />
+                                                or fully remote anywhere.
+                                            </span>
                                         </p>
                                     </div>
                                 </FadeIn>

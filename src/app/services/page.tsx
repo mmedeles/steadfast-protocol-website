@@ -1,5 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+    Code2,
+    Cpu,
+    GitBranch,
+    Users,
+    Phone,
+    FileText,
+    Wrench,
+    Rocket,
+    RefreshCw,
+    type LucideIcon,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
@@ -10,8 +22,17 @@ export const metadata: Metadata = {
         "Custom software development, AI tooling and integration, workflow automation, and technical consulting from Steadfast Protocol.",
 };
 
+const stepIcons: Record<string, LucideIcon> = {
+    HANDSHAKE: Phone,
+    SCOPE: FileText,
+    BUILD: Wrench,
+    DEPLOY: Rocket,
+    SUSTAIN: RefreshCw,
+};
+
 const services = [
     {
+        icon: Code2,
         tag: "// 01",
         title: "Custom Software Development",
         description:
@@ -20,6 +41,7 @@ const services = [
             "You need something built around how your business actually works, not the other way around.",
     },
     {
+        icon: Cpu,
         tag: "// 02",
         title: "AI Tooling & Integration",
         description:
@@ -28,6 +50,7 @@ const services = [
             "You have a task that eats hours every week and depends on reading or judgment, not just data entry.",
     },
     {
+        icon: GitBranch,
         tag: "// 03",
         title: "Workflow Automation",
         description:
@@ -36,6 +59,7 @@ const services = [
             "The same manual process happens on a schedule, and nobody on your team enjoys doing it.",
     },
     {
+        icon: Users,
         tag: "// 04",
         title: "Technical Consulting & Dev Shop Collaboration",
         description:
@@ -98,7 +122,10 @@ export default function Services() {
                         {services.map((service, i) => (
                             <FadeIn key={service.title} delay={i * 0.1}>
                                 <div className="rounded-lg border border-line bg-surface p-8 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-signal/40 hover:shadow-lg hover:shadow-signal/15">
-                                    <p className="font-mono text-xs text-signal">
+                                    <div className="inline-flex items-center justify-center rounded-lg bg-surface-2 p-2">
+                                        <service.icon size={28} className="text-signal" />
+                                    </div>
+                                    <p className="mt-4 font-mono text-xs text-signal">
                                         {service.tag}
                                     </p>
                                     <h2 className="mt-3 font-display text-2xl text-text">
@@ -129,28 +156,31 @@ export default function Services() {
                         </FadeIn>
 
                         <ol className="mt-14 space-y-10">
-                            {steps.map((step, i) => (
-                                <li key={step.code} className="relative">
-                                    <FadeIn delay={i * 0.1} className="flex gap-6">
-                                        <div className="flex flex-col items-center">
-                                            <span className="z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink font-mono text-xs text-signal">
-                                                {i + 1}
-                                            </span>
-                                            {i < steps.length - 1 && (
-                                                <span className="mt-2 w-px flex-1 bg-line" />
-                                            )}
-                                        </div>
-                                        <div className="pb-2">
-                                            <p className="font-mono text-xs tracking-wide text-signal">
-                                                {step.code}
-                                            </p>
-                                            <p className="mt-2 text-sm text-muted md:text-base">
-                                                {step.description}
-                                            </p>
-                                        </div>
-                                    </FadeIn>
-                                </li>
-                            ))}
+                            {steps.map((step, i) => {
+                                const Icon = stepIcons[step.code];
+                                return (
+                                    <li key={step.code} className="relative">
+                                        <FadeIn delay={i * 0.1} className="flex gap-6">
+                                            <div className="flex flex-col items-center">
+                                                <span className="z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-signal/40 bg-ink text-signal">
+                                                    <Icon size={16} />
+                                                </span>
+                                                {i < steps.length - 1 && (
+                                                    <span className="mt-2 w-px flex-1 bg-line" />
+                                                )}
+                                            </div>
+                                            <div className="pb-2">
+                                                <p className="font-mono text-xs tracking-wide text-signal">
+                                                    {step.code}
+                                                </p>
+                                                <p className="mt-2 text-sm text-muted md:text-base">
+                                                    {step.description}
+                                                </p>
+                                            </div>
+                                        </FadeIn>
+                                    </li>
+                                );
+                            })}
                         </ol>
                     </div>
                 </section>

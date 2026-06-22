@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Shield, Eye, Handshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
@@ -12,16 +13,19 @@ export const metadata: Metadata = {
 
 const principles = [
     {
+        icon: Shield,
         label: "DURABLE",
         title: "Built for the six-month mark, not the kickoff meeting.",
         body: "A demo only has to work once, in front of a friendly audience. Production has to work every day, under real data and real users who never read the documentation. We design for that second case from the start, favoring tools we can keep running over ones that just look impressive on day one.",
     },
     {
+        icon: Eye,
         label: "TRANSPARENT",
         title: "You understand what you're getting.",
         body: "We explain what we're building and why, in plain language, not jargon that keeps you dependent on us. You get the source code, the infrastructure access, and a straight answer whenever you ask how something works.",
     },
     {
+        icon: Handshake,
         label: "CONNECTED",
         title: "The relationship doesn't end at launch.",
         body: "Launch day isn't the finish line, it's when the solution starts actually getting used, which is when real questions come up. We stay reachable after deployment instead of disappearing once the invoice clears.",
@@ -61,9 +65,12 @@ export default function About() {
                             {principles.map((principle, i) => (
                                 <FadeIn key={principle.label} delay={i * 0.1}>
                                     <div className="h-full rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-xs text-signal">
-                                            {principle.label}
-                                        </p>
+                                        <div className="flex items-center gap-2">
+                                            <principle.icon size={24} className="text-signal" />
+                                            <p className="font-mono text-xs text-signal">
+                                                {principle.label}
+                                            </p>
+                                        </div>
                                         <h3 className="mt-3 font-display text-lg text-text">
                                             {principle.title}
                                         </h3>

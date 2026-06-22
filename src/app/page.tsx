@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Code2, Cpu, GitBranch, Users, CheckCircle, Lock, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ConnectionTerminal from "@/components/ConnectionTerminal";
@@ -12,26 +13,36 @@ const trustSignals = [
     "Everything we build is yours. No rented templates",
 ];
 
+const proofBadges = [
+    { icon: CheckCircle, label: "Fixed-price quotes" },
+    { icon: Lock, label: "You own the code" },
+    { icon: MapPin, label: "Bismarck, ND" },
+];
+
 const services = [
     {
+        icon: Code2,
         tag: "// custom-software",
         title: "Custom Software Development",
         description:
             "We design and build the systems your business runs on — internal tools, customer-facing products, and everything that needs to keep working long after launch.",
     },
     {
+        icon: Cpu,
         tag: "// ai-integration",
         title: "AI Tooling & Integration",
         description:
             "We bring AI into your stack where it actually earns its place — automating decisions, surfacing insights, and integrating cleanly with what you already have.",
     },
     {
+        icon: GitBranch,
         tag: "// automation",
         title: "Workflow Automation",
         description:
             "We connect your tools and remove the manual busywork in between, so your team spends time on the work that actually needs a person.",
     },
     {
+        icon: Users,
         tag: "// consulting",
         title: "Technical Consulting & Dev Shop Collaboration",
         description:
@@ -106,6 +117,17 @@ export default function Home() {
                                     </span>
                                 ))}
                             </div>
+                            <div className="mt-4 flex flex-wrap items-center gap-2">
+                                {proofBadges.map((badge) => (
+                                    <span
+                                        key={badge.label}
+                                        className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1 text-xs text-muted"
+                                    >
+                                        <badge.icon size={14} className="text-signal" />
+                                        {badge.label}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
 
                         <ConnectionTerminal />
@@ -125,7 +147,10 @@ export default function Home() {
                             {services.map((service, i) => (
                                 <FadeIn key={service.title} delay={i * 0.1}>
                                     <div className="h-full rounded-lg border border-line bg-surface p-6 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-signal/40 hover:shadow-lg hover:shadow-signal/15">
-                                        <p className="font-mono text-xs text-signal">
+                                        <div className="inline-flex items-center justify-center rounded-lg bg-surface-2 p-2">
+                                            <service.icon size={28} className="text-signal" />
+                                        </div>
+                                        <p className="mt-4 font-mono text-xs text-signal">
                                             {service.tag}
                                         </p>
                                         <h3 className="mt-2 font-display text-lg text-text">
