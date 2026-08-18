@@ -1,0 +1,17 @@
+{
+  "horizontal_lockup": {
+    "steadfast_cap_height_pct_of_emblem": 57.5,
+    "protocol_cap_height_pct_of_emblem": 28.29,
+    "protocol_cap_height_px_at_40px_emblem": 11.32,
+    "emblem_to_text_gap_pct_of_emblem_width": 26.0,
+    "emblem_aspect_ratio": 0.779268
+  },
+  "favicon_mirror_mismatch": {
+    "16": 0,
+    "32": 0,
+    "48": 0
+  },
+  "compact_variant_included": false,
+  "retired_dimensional_treatment_included": false,
+  "emblem_aspect_ratio": 0.7792682926829269
+}

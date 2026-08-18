@@ -22,16 +22,16 @@ export const metadata: Metadata = {
       "Steadfast Protocol builds custom software, AI tooling, and workflow automation for teams who need it to just work.",
   icons: {
     icon: [
-      { url: "/favicons/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicons/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicons/favicon.ico", sizes: "any" },
+      { url: "/04-favicons/favicon.svg", type: "image/svg+xml" },
+      { url: "/04-favicons/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/04-favicons/favicon.ico", sizes: "any" },
     ],
-    apple: "/platform/apple-touch-icon-180.png",
+    apple: "/05-platform/apple-touch-icon-180.png",
   },
   openGraph: {
     images: [
       {
-        url: "/platform/open-graph-1200x630.png",
+        url: "/05-platform/open-graph-1200x630.png",
         width: 1200,
         height: 630,
       },

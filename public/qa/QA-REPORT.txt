@@ -1,0 +1,22 @@
+STEADFAST PROTOCOL — FULL UPDATED SUITE QA
+
+Horizontal lockup
+- STEADFAST cap height: 57.50% of emblem height
+- PROTOCOL cap height: 28.29% of emblem height
+- PROTOCOL at 40px emblem: 11.32px
+- Emblem-to-text gap: 26.00%
+- Emblem aspect ratio: 0.779268
+
+Anchor favicon mirror mismatches
+- 16px: 0
+- 32px: 0
+- 48px: 0
+
+Latest package decisions
+- Rebalanced horizontal is primary.
+- Compact horizontal retired.
+- Stacked lockups retained unchanged in proportion.
+- Flat and expressive families included.
+- Favicons are anchor-only, no shield and no rope.
+- Apple/Android retain full shield emblem.
+- Retired dimensional treatment excluded.

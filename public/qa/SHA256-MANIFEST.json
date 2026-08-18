@@ -1,133 +1,313 @@
 [
   {
-    "path": "README.md",
-    "sha256": "57dc66f14bfbc66f83048c6bdf5f4fd1598c53fd0761c2865fbdb23fd4bfd5fc",
-    "bytes": 1024
+    "path": "01-primary-horizontal/sp-horizontal-dark.png",
+    "sha256": "402788d2aadbd78345c0e4dcf745072cc91cdde77c6e7fc07b94fcbe91839381",
+    "bytes": 45850
   },
   {
-    "path": "favicons/favicon-16.png",
-    "sha256": "0931aa59d3828a5851d09d15de9b5f8853ec62ffef4ede71118b2a5b32d18ec6",
-    "bytes": 201
+    "path": "01-primary-horizontal/sp-horizontal-dark.svg",
+    "sha256": "6992ff19a82c740f6066aa3ab62efe3369866c156840816666b8d371ec63deb4",
+    "bytes": 22816
   },
   {
-    "path": "favicons/favicon-32.png",
-    "sha256": "b7d16e836a67411de6f79835f4905ac5a8777bf4b119d11e5a9916f883407f73",
-    "bytes": 309
+    "path": "01-primary-horizontal/sp-horizontal-expressive-dark.png",
+    "sha256": "36f02674c6de953dc10cc9978074a493c2266721c37ad765d67591aff6688d83",
+    "bytes": 49883
   },
   {
-    "path": "favicons/favicon-48.png",
-    "sha256": "451915544c8ce629dfd2e90a7216971390c8c4248012f1db1cc5ed41fbf833bc",
-    "bytes": 477
+    "path": "01-primary-horizontal/sp-horizontal-expressive-dark.svg",
+    "sha256": "9db68695f239211829e4b303082fa322631f1247ad4b37019db542f4a49d963f",
+    "bytes": 22869
   },
   {
-    "path": "favicons/favicon.ico",
-    "sha256": "89bf6aa9cbc3997846991bdc15fa43eeb9965f614cb8ad9ae67e8fafe78cd03b",
-    "bytes": 1041
+    "path": "01-primary-horizontal/sp-horizontal-expressive-light.png",
+    "sha256": "18e5b3672c2ee5bca984639070d02003357ece34daa07d75260b0ec2db605028",
+    "bytes": 49074
   },
   {
-    "path": "favicons/favicon.svg",
-    "sha256": "502a7ce10c25812a9f37c933d25d3fb9a73e3af944e697977062b398d42d5c7c",
-    "bytes": 11267
+    "path": "01-primary-horizontal/sp-horizontal-expressive-light.svg",
+    "sha256": "784ddc57bd189b8e1e8fb9e284d30598e40ba45b0895e40b655b96b9ebc15747",
+    "bytes": 22869
   },
   {
-    "path": "guide/steadfast-protocol-brand-guide-v2.1.md",
-    "sha256": "cb9d39dc1e1c90c9f9c0b2b13ebb3a29dd2079c63eae05b1590feb8e569c8f82",
-    "bytes": 13392
+    "path": "01-primary-horizontal/sp-horizontal-expressive-transparent.png",
+    "sha256": "54061d4351f0098adc905c11050867ad00a17b87e53d44ead05c1e11c8643c29",
+    "bytes": 48458
   },
   {
-    "path": "icons/sp-icon-dark.svg",
-    "sha256": "14aa75b9af69c19522e6f4339d9417f6175844b1daa758bbac529f72d96ea421",
-    "bytes": 13972
+    "path": "01-primary-horizontal/sp-horizontal-expressive-transparent.svg",
+    "sha256": "fa6e23254536b4a4f680929b5646e42d03f351fb7012aa949ca761299d0ee405",
+    "bytes": 22820
   },
   {
-    "path": "icons/sp-icon-light.svg",
-    "sha256": "75ab2713b3f6ddb202e63c3051bd31ebe40797d73bc483eaac277fac31541f10",
-    "bytes": 13972
+    "path": "01-primary-horizontal/sp-horizontal-light.png",
+    "sha256": "46a7ec9c52bd71dd5bf42b023b4ee3fb6816b64a3b5e83cdff1c47b845bf3aa1",
+    "bytes": 42198
   },
   {
-    "path": "icons/sp-icon-noRope-transparent.svg",
-    "sha256": "248e7332d4bc5f91de267e769456c0d10b956d4239da21d1bd66b4153ffe1a8f",
-    "bytes": 11187
+    "path": "01-primary-horizontal/sp-horizontal-light.svg",
+    "sha256": "de6ea8dc5d97e480b5c478813e19d5cfad9301638f9b6ad525efe93e26704c96",
+    "bytes": 22816
   },
   {
-    "path": "icons/sp-icon-transparent.svg",
-    "sha256": "caa2921c1df110e4c2184748753f057ac09346d600da15134b73b4c977e0850f",
-    "bytes": 13923
+    "path": "01-primary-horizontal/sp-horizontal-transparent.png",
+    "sha256": "c667cac6d3e996cd40f1a566f1dfd50119b3cd62c572be3ba96126303734ccfd",
+    "bytes": 42707
   },
   {
-    "path": "platform/android-chrome-192.png",
-    "sha256": "b1c30fee8c02fe6205b1a6e616ed7bffcf646f6d9c801f4fc88fe791af986352",
-    "bytes": 10396
+    "path": "01-primary-horizontal/sp-horizontal-transparent.svg",
+    "sha256": "07fa0a799eaa0b338b0e03ef31af0f41d0f3026644b3a31ddc25de21603989a7",
+    "bytes": 22767
   },
   {
-    "path": "platform/android-chrome-512.png",
-    "sha256": "153d4edbab64d4d0ddf9a9a0107ddc844bf445bece3fe87315c13c4fdfa36f56",
-    "bytes": 30055
+    "path": "02-secondary-stacked/sp-stacked-dark.png",
+    "sha256": "b6b1261a7c2e41bd849a83d422169ede12dfb763e83d4dd4009bc5f1b97005ef",
+    "bytes": 72320
   },
   {
-    "path": "platform/apple-touch-icon-180.png",
-    "sha256": "21ffbd1b9f485151268eeafd32600a1666fd5f799727892a83ff124bbd8a0348",
-    "bytes": 10383
-  },
-  {
-    "path": "platform/open-graph-1200x630.png",
-    "sha256": "da13b1741f0fa271616eba1dfb51fa085b8a4253b9906761bf6fc3470d1c9572",
-    "bytes": 42885
-  },
-  {
-    "path": "primary/sp-horizontal-compact-dark.svg",
-    "sha256": "a122d3e4ecaf09c75d9ba8bfdc7b0aa084c5f66955ed40f9bc4a1772b410c8bf",
-    "bytes": 16171
-  },
-  {
-    "path": "primary/sp-horizontal-compact-transparent.svg",
-    "sha256": "9651eae19c293ca493ca548ea6460f4e2e366163edfbca7357a0aee943298c4d",
-    "bytes": 16123
-  },
-  {
-    "path": "primary/sp-horizontal-dark.svg",
-    "sha256": "f55f66aa80b70a1467c4ec2b1844cd52fe7b121f10845d1b6df42534f94fdb61",
-    "bytes": 22267
-  },
-  {
-    "path": "primary/sp-horizontal-light.svg",
-    "sha256": "044e3eb6384e56e46c43d982befd05936d698fec185433addef177f44253cb9c",
-    "bytes": 22267
-  },
-  {
-    "path": "primary/sp-horizontal-transparent.svg",
-    "sha256": "a6e7d7edf142cd10b2a6da774719b6f162ce123efb03d97688dcf10f0ba44dd8",
-    "bytes": 22219
-  },
-  {
-    "path": "qa/QA-REPORT-v2.1.json",
-    "sha256": "4038f2d65dc77735eb6d56f2c95f4c6023f8df26c4e5303b29c21730bda95a55",
-    "bytes": 11456
-  },
-  {
-    "path": "qa/QA-REPORT-v2.1.txt",
-    "sha256": "6d6b5a7e515e22fbf452280696a2b49490b87a35e58fc239c80d5e4af6f90877",
-    "bytes": 3841
-  },
-  {
-    "path": "qa/transparent-background-verification.png",
-    "sha256": "738957e41e92ecb65953fa1e30533052c8db8efe5a58d8eedcc3e5dc89c3056d",
-    "bytes": 200315
-  },
-  {
-    "path": "secondary/sp-stacked-dark.svg",
+    "path": "02-secondary-stacked/sp-stacked-dark.svg",
     "sha256": "ddb5e9d62e962e39bf1693e22c328d3b23d082bdad24868c5ff263f0a1105ef3",
     "bytes": 22242
   },
   {
-    "path": "secondary/sp-stacked-light.svg",
+    "path": "02-secondary-stacked/sp-stacked-expressive-dark.png",
+    "sha256": "f9d2e4e09d43412d782e0bf325f673f6dc1307840fbab4f985619d2a685e867f",
+    "bytes": 86054
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-expressive-dark.svg",
+    "sha256": "fe1ebb99d082995ec1bf99d48efaec75123dd0d188d475a2901f8eaf476b969e",
+    "bytes": 22635
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-expressive-light.png",
+    "sha256": "872824b2c7bb8de97a8775c5f45cbfd30eea20696ef75fd95efa961cdb3d7d6d",
+    "bytes": 83774
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-expressive-light.svg",
+    "sha256": "458793a396c70c50430784a8c8c5996f89b8c7c932f6f985e1b55bc22287c0c8",
+    "bytes": 22635
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-expressive-transparent.png",
+    "sha256": "314a42c827337f192b2ea76dac917cbdf9b022af86e32e2e5d0be074746280f9",
+    "bytes": 89846
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-expressive-transparent.svg",
+    "sha256": "1dd1b41d4668272f5454fa23c2d5b12b3e91bb32aa1b33ce83f3aba6ee82d5a1",
+    "bytes": 22586
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-light.png",
+    "sha256": "33544d18d7437e17f64e9fc5ff17b167efaf29896c3926b5a80836ae19c77c59",
+    "bytes": 62012
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-light.svg",
     "sha256": "6ee7fab51d5e1ee20718150da23e86429312f5dc29fdb4bcc78d4a2838c6ec20",
     "bytes": 22242
   },
   {
-    "path": "secondary/sp-stacked-transparent.svg",
+    "path": "02-secondary-stacked/sp-stacked-transparent.png",
+    "sha256": "2126c52486fde1a6c46e2a719436acb09b0ed86e4006f0ed6f34c9bc2940d992",
+    "bytes": 70206
+  },
+  {
+    "path": "02-secondary-stacked/sp-stacked-transparent.svg",
     "sha256": "627baa899be67791b0c91309e856e70a620b3adca3f588b4cca5b1fe1162b8d7",
     "bytes": 22193
+  },
+  {
+    "path": "03-icons/sp-icon-dark.png",
+    "sha256": "1b57bd336882711977218ed51304933ccffdebad6e7867961ac20c7c8b0fea5d",
+    "bytes": 53988
+  },
+  {
+    "path": "03-icons/sp-icon-dark.svg",
+    "sha256": "14aa75b9af69c19522e6f4339d9417f6175844b1daa758bbac529f72d96ea421",
+    "bytes": 13972
+  },
+  {
+    "path": "03-icons/sp-icon-expressive-dark.png",
+    "sha256": "1b57bd336882711977218ed51304933ccffdebad6e7867961ac20c7c8b0fea5d",
+    "bytes": 53988
+  },
+  {
+    "path": "03-icons/sp-icon-expressive-dark.svg",
+    "sha256": "14aa75b9af69c19522e6f4339d9417f6175844b1daa758bbac529f72d96ea421",
+    "bytes": 13972
+  },
+  {
+    "path": "03-icons/sp-icon-expressive-light.png",
+    "sha256": "ac885026d9a148ce3eb50c3c7501a536eedab908184897080d23fa18ee05e552",
+    "bytes": 43413
+  },
+  {
+    "path": "03-icons/sp-icon-expressive-light.svg",
+    "sha256": "75ab2713b3f6ddb202e63c3051bd31ebe40797d73bc483eaac277fac31541f10",
+    "bytes": 13972
+  },
+  {
+    "path": "03-icons/sp-icon-expressive-transparent.png",
+    "sha256": "adda7a017d1263cf4a9be9e3d37686af40bc8dcc7fe029b64bf73afeb882c662",
+    "bytes": 50894
+  },
+  {
+    "path": "03-icons/sp-icon-expressive-transparent.svg",
+    "sha256": "caa2921c1df110e4c2184748753f057ac09346d600da15134b73b4c977e0850f",
+    "bytes": 13923
+  },
+  {
+    "path": "03-icons/sp-icon-light.png",
+    "sha256": "ac885026d9a148ce3eb50c3c7501a536eedab908184897080d23fa18ee05e552",
+    "bytes": 43413
+  },
+  {
+    "path": "03-icons/sp-icon-light.svg",
+    "sha256": "75ab2713b3f6ddb202e63c3051bd31ebe40797d73bc483eaac277fac31541f10",
+    "bytes": 13972
+  },
+  {
+    "path": "03-icons/sp-icon-noRope-dark.png",
+    "sha256": "c4efa5be165bd82d28d0377128ab4546634d62d9c6c9fe668813067ffc18e464",
+    "bytes": 49648
+  },
+  {
+    "path": "03-icons/sp-icon-noRope-dark.svg",
+    "sha256": "64d3c430f0f33b2a17df66589c878c49782cd1db7cb47a4a8da8ccf47f2444cd",
+    "bytes": 11236
+  },
+  {
+    "path": "03-icons/sp-icon-noRope-light.png",
+    "sha256": "6a0078b56df38cfbfe700f6123e6fdee2f0a9922f769ab652dc6a4ab481beb4b",
+    "bytes": 39638
+  },
+  {
+    "path": "03-icons/sp-icon-noRope-light.svg",
+    "sha256": "f0b9e9ecb0a826f6619040bd306d7127bdfa45f5198b20ecf6ac862ee94f9b88",
+    "bytes": 11236
+  },
+  {
+    "path": "03-icons/sp-icon-noRope-transparent.png",
+    "sha256": "a3048646cabb439adc16cd44969627cbd677246fd6670782959ab13894a0391e",
+    "bytes": 46590
+  },
+  {
+    "path": "03-icons/sp-icon-noRope-transparent.svg",
+    "sha256": "248e7332d4bc5f91de267e769456c0d10b956d4239da21d1bd66b4153ffe1a8f",
+    "bytes": 11187
+  },
+  {
+    "path": "03-icons/sp-icon-transparent.png",
+    "sha256": "adda7a017d1263cf4a9be9e3d37686af40bc8dcc7fe029b64bf73afeb882c662",
+    "bytes": 50894
+  },
+  {
+    "path": "03-icons/sp-icon-transparent.svg",
+    "sha256": "caa2921c1df110e4c2184748753f057ac09346d600da15134b73b4c977e0850f",
+    "bytes": 13923
+  },
+  {
+    "path": "04-favicons/favicon-16.png",
+    "sha256": "1bccbca57dfad714a4b97726f9d62a67f019ec52ae7e22c9a2214f73622da97b",
+    "bytes": 164
+  },
+  {
+    "path": "04-favicons/favicon-32.png",
+    "sha256": "5f1b9c7d535262aa04ea5110dc8712c30cb1f47e40e0a5a28ccfd84c19d6ea88",
+    "bytes": 259
+  },
+  {
+    "path": "04-favicons/favicon-48.png",
+    "sha256": "51f6c314a03a30cf61e9b9c88c96b46d0e1667f8160bc13de60ce1ced57508ac",
+    "bytes": 360
+  },
+  {
+    "path": "04-favicons/favicon.ico",
+    "sha256": "92cdf9ef7f7e137844f25ce03781d1ae4767a9027345a855457cde81db7e407a",
+    "bytes": 186
+  },
+  {
+    "path": "04-favicons/favicon.svg",
+    "sha256": "7d7a77cb0fa840f18386ca03aa9cb3254a2f849c30686a88501fa0a6d7206a22",
+    "bytes": 5135
+  },
+  {
+    "path": "05-platform/android-chrome-192.png",
+    "sha256": "b1c30fee8c02fe6205b1a6e616ed7bffcf646f6d9c801f4fc88fe791af986352",
+    "bytes": 10396
+  },
+  {
+    "path": "05-platform/android-chrome-512.png",
+    "sha256": "153d4edbab64d4d0ddf9a9a0107ddc844bf445bece3fe87315c13c4fdfa36f56",
+    "bytes": 30055
+  },
+  {
+    "path": "05-platform/apple-touch-icon-180.png",
+    "sha256": "21ffbd1b9f485151268eeafd32600a1666fd5f799727892a83ff124bbd8a0348",
+    "bytes": 10383
+  },
+  {
+    "path": "05-platform/email-signature-360x96.png",
+    "sha256": "02215aa2f91b8c979b9c9dcfd85241dd7a786c5c42d0f646a8f0b1687e5c0a92",
+    "bytes": 17165
+  },
+  {
+    "path": "05-platform/open-graph-1200x630.png",
+    "sha256": "b84c6e1b0d9aeb7d8af2eea4d93aac6162a1ca85a970b8a4e47c4cc58a9fb079",
+    "bytes": 60871
+  },
+  {
+    "path": "05-platform/social-profile-1024.png",
+    "sha256": "a37d3110a83a4e86eecb1d32259550e9a793db7d5a1d826de29d4a0a62b23693",
+    "bytes": 56613
+  },
+  {
+    "path": "06-monochrome/sp-monochrome-black.png",
+    "sha256": "cbaa39f00555a48f26df5525d3f5dd3a339f245cad0db31dd0aeb9f4f1e1a097",
+    "bytes": 52899
+  },
+  {
+    "path": "06-monochrome/sp-monochrome-black.svg",
+    "sha256": "a31e53513d1dece912e98cefbf59a3aeb2ca270160c81bd59a88c8627ae80b16",
+    "bytes": 13930
+  },
+  {
+    "path": "06-monochrome/sp-monochrome-white.png",
+    "sha256": "0ec8f1cf1562ace58f253fe4ad4bdd0596ea9893d09da2dd286211184bf030ac",
+    "bytes": 50994
+  },
+  {
+    "path": "06-monochrome/sp-monochrome-white.svg",
+    "sha256": "6911e2883e8abcdc112979c02da0d1eadf65fa2b140d81d54e0db16151c687fe",
+    "bytes": 13930
+  },
+  {
+    "path": "README.md",
+    "sha256": "20503181b81f386efbd038b8a115ec5b4cdaba5527b5fd1f47b836a11ce4de82",
+    "bytes": 869
+  },
+  {
+    "path": "docs/steadfast-protocol-brand-guide-v2.1.md",
+    "sha256": "cb9d39dc1e1c90c9f9c0b2b13ebb3a29dd2079c63eae05b1590feb8e569c8f82",
+    "bytes": 13392
+  },
+  {
+    "path": "qa/QA-REPORT.json",
+    "sha256": "d87c8025acab829a2961d95fa94e1722b8a2570bd244855b39d55505f36cff86",
+    "bytes": 475
+  },
+  {
+    "path": "qa/QA-REPORT.txt",
+    "sha256": "6484a0d4d99c2f70963826d799f3dd0f324c3367ae0b5e0ea72ca81f6f1d5526",
+    "bytes": 640
+  },
+  {
+    "path": "qa/full-suite-preview.png",
+    "sha256": "c21790f10a55d8e22688e5074ac2fdf4e989b4a3e27ba09ba598339e1f8f3364",
+    "bytes": 347257
   },
   {
     "path": "source/sp-master-emblem-expressive.svg",

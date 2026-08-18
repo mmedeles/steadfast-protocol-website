@@ -13,7 +13,13 @@ steadfast, anchored, dependable, holds under load, established — never
 explicit.
 
 ## Visual identity — brand guide v2.1, follow exactly, do not redesign
-See `public/guide/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
+See `public/docs/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
+Current asset drop lives under `public/01-primary-horizontal/`,
+`02-secondary-stacked/`, `03-icons/`, `04-favicons/`, `05-platform/`,
+`06-monochrome/`, `source/` — the older `public/primary/`, `secondary/`,
+`icons/`, `favicons/`, `platform/`, `guide/` and `qa/QA-REPORT-v2.1.*`
+trees are superseded and unreferenced by any component; safe to delete
+if a cleanup pass ever happens, just hasn't been asked for yet.
 - Background: var(--color-ink) #000413, alternate: var(--color-surface) #050B18
 - Surfaces: var(--color-surface-2) #0A1424
 - Borders: var(--color-line) #16233A
@@ -25,21 +31,20 @@ See `public/guide/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
   headings/hero, 600 section headings, 500 labels/subheads/nav, 400 body),
   font-mono is IBM Plex Mono — sparingly, for the terminal panel, eyebrow
   labels and status indicators, never body copy.
-- Logo: horizontal lockup is primary (`public/primary/sp-horizontal-*`).
-  Navbar uses it at 60px (md+), Footer at 52px. Below md, Navbar falls back
-  to the emblem-only icon (`public/icons/sp-icon-transparent.svg`) — not the
-  compact wordmark — since a truncated wordmark reads worse than no wordmark.
-  Transparent lockups are for dark backgrounds only — never place on
-  mid-tone (~40%+ luminance) fields.
-  **Known limitation, measured not guessed:** in this SVG, PROTOCOL's cap
-  height is a fixed ~7.16% of the total rendered lockup height (STEADFAST is
-  ~14.5%) — verified via `getBBox()` on the wordmark paths. That means
-  PROTOCOL cap height in px ≈ 0.0716 × (Image `height` prop): only ~4.3px at
-  60px, ~3.7px at 52px, still a blur at 400% zoom. Getting PROTOCOL to a
-  legible ~8px cap height needs a lockup height of ~110px+ — not viable in
-  a navbar/footer. Don't re-attempt "just make it bigger" at chrome scale
-  without a source asset that re-proportions PROTOCOL relative to STEADFAST;
-  the current geometry can't get there within site-chrome-sized placements.
+- Logo: horizontal lockup is primary (`public/01-primary-horizontal/sp-horizontal-*`),
+  used at every breakpoint — no compact/emblem-only fallback anymore. Navbar
+  40px, Footer 48px. Transparent lockups are for dark backgrounds only —
+  never place on mid-tone (~40%+ luminance) fields.
+  **Rebalanced asset (measured, not guessed):** as of this drop, PROTOCOL's
+  cap height is a fixed ~19.9% of the total rendered lockup height (STEADFAST
+  is ~40.5%) — verified via `getBBox()` on the wordmark paths, cross-checked
+  against the SVG's own `<metadata>` ("STEADFAST cap height 57.5% of emblem
+  height"). PROTOCOL cap height in px ≈ 0.199 × (Image `height` prop): ~8.0px
+  at 40px (navbar), ~9.6px at 48px (footer) — both crisp and distinct at
+  400% zoom, unlike the earlier (now superseded) 1600×500-viewBox asset where
+  PROTOCOL was only ~7% of lockup height and stayed a blur even at 60px.
+  If this asset is ever swapped again, re-measure with `getBBox()` before
+  picking a size — don't assume the old ~7%/~14.5% ratios still apply.
 - Signature motif: a terminal/"connection status" aesthetic — small mono-font
   status indicators, blinking-dot badges like "connection: steadfast"
   (see Footer.tsx for the existing pattern)

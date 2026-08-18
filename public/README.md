@@ -1,16 +1,19 @@
-# Steadfast Protocol Web Assets — v2.1
+# Steadfast Protocol — Full Updated Brand Suite
 
-This package is an export of the approved v2.x identity. No mark redesign is introduced.
+This package consolidates the latest approved identity after the horizontal-lockup rebalancing and anchor-only favicon update.
 
-## Use
-- Primary website logo: `primary/sp-horizontal-*.svg`
-- Under 24px lockup height: `sp-horizontal-compact-*`
-- Icon >=96px: `icons/sp-icon-*`
-- Icon <96px (non-favicon): `icons/sp-icon-noRope-transparent.svg`
-- Exact 16/32/48 browser icons: use the independent PNG masters in `favicons/`
-- `favicons/favicon.svg` is a scalable no-rope browser fallback and is **not** a source for the native PNG favicon masters.
+## Included
+- Rebalanced primary horizontal lockups: flat + expressive, dark/light/transparent
+- Secondary stacked lockups: flat + expressive
+- Shield icon family: flat, expressive, and no-rope responsive variants
+- Anchor-only favicon family: 16/32/48, ICO, scalable SVG
+- Platform assets: Apple Touch, Android Chrome, Open Graph, social profile, email signature
+- Monochrome assets
+- Canonical sources, v2.1 guide, preview, and QA
 
-## Source policy
-`source/sp-master-emblem.svg` is the web canonical geometry/treatment source. All production SVG lockups use real vector paths and outlined wordmark geometry: no `<text>`, embedded raster, base64, filters or gradients.
-
-The expressive two-stop source is retained in `source/` as an approved reference treatment, but no expressive production asset is included in this web subset because it was not requested. The retired v1 dimensional treatment is absent.
+## Latest changes
+- Horizontal wordmark increased for UI legibility
+- Compact horizontal retired
+- Favicon changed to anchor-only; no shield and no rope
+- Apple/Android continue using the full shield emblem
+- Retired dimensional treatment remains excluded
