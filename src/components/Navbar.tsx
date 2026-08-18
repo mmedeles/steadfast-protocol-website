@@ -84,15 +84,22 @@ export default function Navbar() {
                     : "border-b border-transparent bg-transparent"
             }`}
         >
-            <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+            <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3.5">
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center font-mono">
                         <Image
-                            src="/primary/sp-horizontal-compact-transparent.svg"
+                            src="/primary/sp-horizontal-transparent.svg"
                             alt="Steadfast Protocol"
-                            height={44}
-                            width={141}
-                            className="h-11 w-auto"
+                            height={60}
+                            width={192}
+                            className="hidden h-[60px] w-auto md:block"
+                        />
+                        <Image
+                            src="/icons/sp-icon-transparent.svg"
+                            alt="Steadfast Protocol"
+                            height={40}
+                            width={40}
+                            className="h-10 w-auto md:hidden"
                         />
                     </Link>
 
