@@ -27,9 +27,9 @@ export default function Footer() {
                         <Image
                             src="/01-primary-horizontal/sp-horizontal-transparent.svg"
                             alt="Steadfast Protocol"
-                            height={48}
-                            width={248}
-                            className="h-12 w-auto"
+                            height={64}
+                            width={331}
+                            className="h-16 w-auto"
                         />
                         <p className="mt-3 max-w-xs text-sm text-muted">
                             Custom software, AI tooling, and workflow automation — built in

@@ -32,19 +32,22 @@ if a cleanup pass ever happens, just hasn't been asked for yet.
   font-mono is IBM Plex Mono — sparingly, for the terminal panel, eyebrow
   labels and status indicators, never body copy.
 - Logo: horizontal lockup is primary (`public/01-primary-horizontal/sp-horizontal-*`),
-  used at every breakpoint — no compact/emblem-only fallback anymore. Navbar
-  40px, Footer 48px. Transparent lockups are for dark backgrounds only —
-  never place on mid-tone (~40%+ luminance) fields.
-  **Rebalanced asset (measured, not guessed):** as of this drop, PROTOCOL's
-  cap height is a fixed ~19.9% of the total rendered lockup height (STEADFAST
-  is ~40.5%) — verified via `getBBox()` on the wordmark paths, cross-checked
-  against the SVG's own `<metadata>` ("STEADFAST cap height 57.5% of emblem
-  height"). PROTOCOL cap height in px ≈ 0.199 × (Image `height` prop): ~8.0px
-  at 40px (navbar), ~9.6px at 48px (footer) — both crisp and distinct at
-  400% zoom, unlike the earlier (now superseded) 1600×500-viewBox asset where
-  PROTOCOL was only ~7% of lockup height and stayed a blur even at 60px.
-  If this asset is ever swapped again, re-measure with `getBBox()` before
-  picking a size — don't assume the old ~7%/~14.5% ratios still apply.
+  used at every breakpoint — no compact/emblem-only fallback. Navbar 56px
+  (md+) / 44px (below md, same source just smaller — bar padding is
+  `py-[18px]` for a ~92px bar at 56px). Footer 64px. Transparent lockups are
+  for dark backgrounds only — never place on mid-tone (~40%+ luminance)
+  fields.
+  **Rebalanced asset (measured, not guessed) — ratios of rendered lockup
+  height, verified via `getBBox()` on the wordmark/emblem paths and
+  cross-checked against the SVG's own `<metadata>`:** emblem ≈70.1%,
+  STEADFAST cap height ≈40.5%, PROTOCOL cap height ≈19.9%. At the current
+  sizes: navbar (56px) → emblem 39px / STEADFAST 22.7px / PROTOCOL 11.1px;
+  footer (64px) → emblem 44.9px / STEADFAST 25.9px / PROTOCOL 12.7px — all
+  crisp at 400% zoom. This is the *same* rebalanced asset as before, just
+  rendered larger — the earlier 40px/48px sizing was legible but small,
+  not a geometry problem. If this asset is ever swapped again, re-measure
+  with `getBBox()` before picking a size — don't assume any of these
+  fraction-of-lockup-height ratios still apply to a new file.
 - Signature motif: a terminal/"connection status" aesthetic — small mono-font
   status indicators, blinking-dot badges like "connection: steadfast"
   (see Footer.tsx for the existing pattern)
