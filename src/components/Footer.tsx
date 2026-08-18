@@ -25,11 +25,11 @@ export default function Footer() {
                 <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] md:gap-8">
                     <div>
                         <Image
-                            src="/logo/sp-horizontal-dark.svg"
+                            src="/primary/sp-horizontal-transparent.svg"
                             alt="Steadfast Protocol"
-                            height={28}
-                            width={98}
-                            className="h-7 w-auto"
+                            height={34}
+                            width={109}
+                            className="h-[34px] w-auto"
                         />
                         <p className="mt-3 max-w-xs text-sm text-muted">
                             Custom software, AI tooling, and workflow automation — built in

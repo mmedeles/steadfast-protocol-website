@@ -13,7 +13,7 @@ const navLinks = [
 ];
 
 const ctaClasses =
-    "inline-flex items-center justify-center rounded-md bg-signal px-5 py-2.5 font-sans text-sm font-semibold text-white transition-all duration-150 ease-out hover:scale-[1.02] hover:bg-[#3b82f6] hover:brightness-110";
+    "inline-flex items-center justify-center rounded-md bg-signal px-5 py-2.5 font-sans text-sm font-semibold text-ink transition-all duration-150 ease-out hover:scale-[1.02] hover:bg-signal-hi";
 
 function NavLink({
     href,
@@ -88,11 +88,18 @@ export default function Navbar() {
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center font-mono">
                         <Image
-                            src="/logo/sp-horizontal-dark.svg"
+                            src="/primary/sp-horizontal-transparent.svg"
                             alt="Steadfast Protocol"
-                            height={52}
-                            width={182}
-                            className="h-[52px] w-auto"
+                            height={44}
+                            width={141}
+                            className="hidden h-11 w-auto md:block"
+                        />
+                        <Image
+                            src="/primary/sp-horizontal-compact-transparent.svg"
+                            alt="Steadfast Protocol"
+                            height={44}
+                            width={141}
+                            className="h-11 w-auto md:hidden"
                         />
                     </Link>
 

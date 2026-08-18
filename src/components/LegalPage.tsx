@@ -45,7 +45,7 @@ export default function LegalPage({
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-16">
                         <FadeIn>
-                            <div className="rounded-md border border-wheat/30 bg-wheat/10 px-4 py-3 text-sm text-wheat">
+                            <div className="rounded-md border border-amber-400/30 bg-amber-400/10 px-4 py-3 text-sm text-amber-400">
                                 This document is a placeholder. It has not been reviewed by
                                 legal counsel and does not constitute legal advice or create
                                 binding obligations. Replace before publishing.

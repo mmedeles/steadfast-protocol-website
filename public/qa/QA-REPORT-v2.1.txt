@@ -1,0 +1,50 @@
+STEADFAST PROTOCOL — WEB ASSET EXPORT / BRAND GUIDE v2.1
+
+Canonical full-emblem aspect ratio: 0.779268 (target 0.779 +/- 0.005).
+
+FLAT ASSET DOMINANT COLOUR
+primary/sp-horizontal-dark.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=93.43%
+primary/sp-horizontal-light.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=93.49%
+primary/sp-horizontal-transparent.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=95.47%
+primary/sp-horizontal-compact-dark.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=93.40%
+primary/sp-horizontal-compact-transparent.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=95.43%
+secondary/sp-stacked-dark.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=96.49%
+secondary/sp-stacked-light.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=96.52%
+secondary/sp-stacked-transparent.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=97.52%
+icons/sp-icon-transparent.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=97.42%
+icons/sp-icon-noRope-transparent.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=97.41%
+icons/sp-icon-dark.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=96.48%
+icons/sp-icon-light.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=96.51%
+favicons/favicon.svg: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=57.97%
+platform/apple-touch-icon-180.png: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=82.31%
+platform/android-chrome-192.png: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=84.58%
+platform/android-chrome-512.png: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=93.96%
+platform/open-graph-1200x630.png: aspect=0.779268; source dominant #4C8FFF share=100.00%; 4x rendered exact-blue diagnostic=92.71%
+
+FAVICON MIRROR MISMATCH
+favicon-16.png: mismatch=0; ink cells=70; responsive ink-bbox aspect=0.800000
+favicon-32.png: mismatch=0; ink cells=284; responsive ink-bbox aspect=0.928571
+favicon-48.png: mismatch=0; ink cells=550; responsive ink-bbox aspect=0.883721
+
+favicon.ico sizes: [[16, 16], [32, 32], [48, 48]]; each entry embeds the exact independent PNG master
+
+TRANSPARENT ALPHA VERIFICATION
+primary/sp-horizontal-transparent.svg: outside-alpha plate deviation=0.0
+primary/sp-horizontal-compact-transparent.svg: outside-alpha plate deviation=0.0
+secondary/sp-stacked-transparent.svg: outside-alpha plate deviation=0.0
+icons/sp-icon-transparent.svg: outside-alpha plate deviation=0.0
+icons/sp-icon-noRope-transparent.svg: outside-alpha plate deviation=0.0
+
+VECTOR SOURCE CHECKS
+Production SVGs containing <image>, <text>, base64 or gradients: 0
+Flat production emblem paths: exactly one ink colour #4C8FFF (100.00% source share).
+Retired dimensional treatment: absent.
+Expressive reference source: exactly two gradient stops.
+
+ICON CLEAR SPACE
+Scaled ring diameter: 135.92px
+Margins L/R/T/B: 220.55 / 220.55 / 138.00 / 138.00px
+Pass: True
+
+FAVICON ASPECT NOTE
+The 16/32/48 PNG favicons remain the approved independent responsive pixel masters. Their pixel-grid ink bboxes intentionally differ from the 0.779 full emblem ratio; forcing the full ratio would violate the locked favicon policy. All master-derived SVG and platform emblem transforms preserve 0.779268.

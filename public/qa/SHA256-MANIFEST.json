@@ -1,0 +1,152 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "57dc66f14bfbc66f83048c6bdf5f4fd1598c53fd0761c2865fbdb23fd4bfd5fc",
+    "bytes": 1024
+  },
+  {
+    "path": "favicons/favicon-16.png",
+    "sha256": "0931aa59d3828a5851d09d15de9b5f8853ec62ffef4ede71118b2a5b32d18ec6",
+    "bytes": 201
+  },
+  {
+    "path": "favicons/favicon-32.png",
+    "sha256": "b7d16e836a67411de6f79835f4905ac5a8777bf4b119d11e5a9916f883407f73",
+    "bytes": 309
+  },
+  {
+    "path": "favicons/favicon-48.png",
+    "sha256": "451915544c8ce629dfd2e90a7216971390c8c4248012f1db1cc5ed41fbf833bc",
+    "bytes": 477
+  },
+  {
+    "path": "favicons/favicon.ico",
+    "sha256": "89bf6aa9cbc3997846991bdc15fa43eeb9965f614cb8ad9ae67e8fafe78cd03b",
+    "bytes": 1041
+  },
+  {
+    "path": "favicons/favicon.svg",
+    "sha256": "502a7ce10c25812a9f37c933d25d3fb9a73e3af944e697977062b398d42d5c7c",
+    "bytes": 11267
+  },
+  {
+    "path": "guide/steadfast-protocol-brand-guide-v2.1.md",
+    "sha256": "cb9d39dc1e1c90c9f9c0b2b13ebb3a29dd2079c63eae05b1590feb8e569c8f82",
+    "bytes": 13392
+  },
+  {
+    "path": "icons/sp-icon-dark.svg",
+    "sha256": "14aa75b9af69c19522e6f4339d9417f6175844b1daa758bbac529f72d96ea421",
+    "bytes": 13972
+  },
+  {
+    "path": "icons/sp-icon-light.svg",
+    "sha256": "75ab2713b3f6ddb202e63c3051bd31ebe40797d73bc483eaac277fac31541f10",
+    "bytes": 13972
+  },
+  {
+    "path": "icons/sp-icon-noRope-transparent.svg",
+    "sha256": "248e7332d4bc5f91de267e769456c0d10b956d4239da21d1bd66b4153ffe1a8f",
+    "bytes": 11187
+  },
+  {
+    "path": "icons/sp-icon-transparent.svg",
+    "sha256": "caa2921c1df110e4c2184748753f057ac09346d600da15134b73b4c977e0850f",
+    "bytes": 13923
+  },
+  {
+    "path": "platform/android-chrome-192.png",
+    "sha256": "b1c30fee8c02fe6205b1a6e616ed7bffcf646f6d9c801f4fc88fe791af986352",
+    "bytes": 10396
+  },
+  {
+    "path": "platform/android-chrome-512.png",
+    "sha256": "153d4edbab64d4d0ddf9a9a0107ddc844bf445bece3fe87315c13c4fdfa36f56",
+    "bytes": 30055
+  },
+  {
+    "path": "platform/apple-touch-icon-180.png",
+    "sha256": "21ffbd1b9f485151268eeafd32600a1666fd5f799727892a83ff124bbd8a0348",
+    "bytes": 10383
+  },
+  {
+    "path": "platform/open-graph-1200x630.png",
+    "sha256": "da13b1741f0fa271616eba1dfb51fa085b8a4253b9906761bf6fc3470d1c9572",
+    "bytes": 42885
+  },
+  {
+    "path": "primary/sp-horizontal-compact-dark.svg",
+    "sha256": "a122d3e4ecaf09c75d9ba8bfdc7b0aa084c5f66955ed40f9bc4a1772b410c8bf",
+    "bytes": 16171
+  },
+  {
+    "path": "primary/sp-horizontal-compact-transparent.svg",
+    "sha256": "9651eae19c293ca493ca548ea6460f4e2e366163edfbca7357a0aee943298c4d",
+    "bytes": 16123
+  },
+  {
+    "path": "primary/sp-horizontal-dark.svg",
+    "sha256": "f55f66aa80b70a1467c4ec2b1844cd52fe7b121f10845d1b6df42534f94fdb61",
+    "bytes": 22267
+  },
+  {
+    "path": "primary/sp-horizontal-light.svg",
+    "sha256": "044e3eb6384e56e46c43d982befd05936d698fec185433addef177f44253cb9c",
+    "bytes": 22267
+  },
+  {
+    "path": "primary/sp-horizontal-transparent.svg",
+    "sha256": "a6e7d7edf142cd10b2a6da774719b6f162ce123efb03d97688dcf10f0ba44dd8",
+    "bytes": 22219
+  },
+  {
+    "path": "qa/QA-REPORT-v2.1.json",
+    "sha256": "4038f2d65dc77735eb6d56f2c95f4c6023f8df26c4e5303b29c21730bda95a55",
+    "bytes": 11456
+  },
+  {
+    "path": "qa/QA-REPORT-v2.1.txt",
+    "sha256": "6d6b5a7e515e22fbf452280696a2b49490b87a35e58fc239c80d5e4af6f90877",
+    "bytes": 3841
+  },
+  {
+    "path": "qa/transparent-background-verification.png",
+    "sha256": "738957e41e92ecb65953fa1e30533052c8db8efe5a58d8eedcc3e5dc89c3056d",
+    "bytes": 200315
+  },
+  {
+    "path": "secondary/sp-stacked-dark.svg",
+    "sha256": "ddb5e9d62e962e39bf1693e22c328d3b23d082bdad24868c5ff263f0a1105ef3",
+    "bytes": 22242
+  },
+  {
+    "path": "secondary/sp-stacked-light.svg",
+    "sha256": "6ee7fab51d5e1ee20718150da23e86429312f5dc29fdb4bcc78d4a2838c6ec20",
+    "bytes": 22242
+  },
+  {
+    "path": "secondary/sp-stacked-transparent.svg",
+    "sha256": "627baa899be67791b0c91309e856e70a620b3adca3f588b4cca5b1fe1162b8d7",
+    "bytes": 22193
+  },
+  {
+    "path": "source/sp-master-emblem-expressive.svg",
+    "sha256": "06340f84e75f66238dec92dbf1f979e0e89ca18a173fbd425093a2e72156da29",
+    "bytes": 14154
+  },
+  {
+    "path": "source/sp-master-emblem-noRope.svg",
+    "sha256": "7abdeb58ca9e5a7bc9fabc15baf4c988dca965666cb6b8a97657eb2ffe570763",
+    "bytes": 11195
+  },
+  {
+    "path": "source/sp-master-emblem.svg",
+    "sha256": "758c778241f2697c87e12e6ce5348460c746b131a8fc38728024f66991caab56",
+    "bytes": 13930
+  },
+  {
+    "path": "source/sp-wordmark-outlined.svg",
+    "sha256": "8d79546f67defa471067b5f6158aafcd079a5c68406c56fb322d1efe2cbdf147",
+    "bytes": 8486
+  }
+]

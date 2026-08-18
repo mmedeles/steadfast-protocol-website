@@ -1,0 +1,379 @@
+{
+  "version": "2.1-web-export",
+  "canonical_master": "source/sp-master-emblem.svg",
+  "canonical_geometry_aspect": 0.7792682926829269,
+  "wordmark_outline_geometry_sha256": "332d3f902721f68a346c9b8447b8bd283395148000d159e111db7bd8f6a15107",
+  "wordmark": {
+    "protocol_target_cap_ratio": 0.5,
+    "tracking_em": 0.25,
+    "visible_span_target": [
+      0.66,
+      0.72
+    ],
+    "flanking_rules": 0,
+    "embedded_raster_or_text": false
+  },
+  "assets": {
+    "primary/sp-horizontal-dark.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 76.70033891612648,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 93.42515848108509,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "primary/sp-horizontal-light.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 76.8166089965398,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 93.48640064418001,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "primary/sp-horizontal-transparent.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 84.9374713546782,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 95.46917404656477,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "primary/sp-horizontal-compact-dark.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 76.62255607427429,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 93.40344418986675,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "primary/sp-horizontal-compact-transparent.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 85.06550218340611,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 95.43488558649271,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "secondary/sp-stacked-dark.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 86.37880386732452,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 96.49376499102108,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "secondary/sp-stacked-light.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 86.47251962883654,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 96.52080139331242,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "secondary/sp-stacked-transparent.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 89.68165184581255,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 97.51526840647654,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "icons/sp-icon-transparent.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 89.16460614623809,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 97.41844159348986,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "icons/sp-icon-noRope-transparent.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 89.05141565697784,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 97.41284262705136,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "icons/sp-icon-dark.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 86.40032284100081,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 96.482024118477,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "icons/sp-icon-light.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 86.48203976276329,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 96.51448498307059,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "favicons/favicon.svg": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 8.656716417910449,
+      "svg": {
+        "has_image": false,
+        "has_text": false,
+        "has_base64": false,
+        "gradient_count": 0
+      },
+      "dominant_flat_ink_share_pct_4x_QA": 57.968155558686774,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "platform/apple-touch-icon-180.png": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 4.054054054054054,
+      "dominant_flat_ink_share_pct_4x_QA": 82.31156937672948,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "platform/android-chrome-192.png": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 6.182698124621899,
+      "dominant_flat_ink_share_pct_4x_QA": 84.57619029191336,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "platform/android-chrome-512.png": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 40.7435124248894,
+      "dominant_flat_ink_share_pct_4x_QA": 93.96275132194533,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    },
+    "platform/open-graph-1200x630.png": {
+      "emblem_aspect_ratio": 0.7792682926829269,
+      "flat_emblem_exact_blue_share_pct": 73.69402245051762,
+      "dominant_flat_ink_share_pct_4x_QA": 92.7082273136139,
+      "source_emblem_ink_colours": [
+        "#4C8FFF"
+      ],
+      "dominant_flat_ink_share_pct_source": 100.0
+    }
+  },
+  "icon_clear_space": {
+    "ring_diameter_px": 135.91707317073173,
+    "left_px": 220.55365853658537,
+    "right_px": 220.55365853658532,
+    "top_px": 138.0,
+    "bottom_px": 138.0,
+    "pass": true
+  },
+  "favicons": {
+    "native_masters": {
+      "favicon-16.png": {
+        "size": [
+          16,
+          16
+        ],
+        "mirror_mismatch_pixels": 0,
+        "ink_cells": 70,
+        "ink_bbox": [
+          2,
+          1,
+          13,
+          15
+        ],
+        "ink_bbox_aspect": 0.8
+      },
+      "favicon-32.png": {
+        "size": [
+          32,
+          32
+        ],
+        "mirror_mismatch_pixels": 0,
+        "ink_cells": 284,
+        "ink_bbox": [
+          3,
+          3,
+          28,
+          30
+        ],
+        "ink_bbox_aspect": 0.9285714285714286
+      },
+      "favicon-48.png": {
+        "size": [
+          48,
+          48
+        ],
+        "mirror_mismatch_pixels": 0,
+        "ink_cells": 550,
+        "ink_bbox": [
+          5,
+          4,
+          42,
+          46
+        ],
+        "ink_bbox_aspect": 0.8837209302325582
+      }
+    },
+    "ico_sizes": [
+      [
+        16,
+        16
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        48,
+        48
+      ]
+    ],
+    "note": "Native favicon masters are independent responsive drawings and are not regenerated from the full master SVG.",
+    "ico_embeds_exact_independent_png_payloads": true,
+    "ico_entries": [
+      {
+        "size": [
+          16,
+          16
+        ],
+        "bytes": 201,
+        "png_signature": true,
+        "sha256": "0931aa59d3828a5851d09d15de9b5f8853ec62ffef4ede71118b2a5b32d18ec6"
+      },
+      {
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 309,
+        "png_signature": true,
+        "sha256": "b7d16e836a67411de6f79835f4905ac5a8777bf4b119d11e5a9916f883407f73"
+      },
+      {
+        "size": [
+          48,
+          48
+        ],
+        "bytes": 477,
+        "png_signature": true,
+        "sha256": "451915544c8ce629dfd2e90a7216971390c8c4248012f1db1cc5ed41fbf833bc"
+      }
+    ]
+  },
+  "transparent_verification": {
+    "primary/sp-horizontal-transparent.svg": {
+      "outside_alpha_plate_deviation": 0.0,
+      "zero_alpha_pixels": 740837
+    },
+    "primary/sp-horizontal-compact-transparent.svg": {
+      "outside_alpha_plate_deviation": 0.0,
+      "zero_alpha_pixels": 746877
+    },
+    "secondary/sp-stacked-transparent.svg": {
+      "outside_alpha_plate_deviation": 0.0,
+      "zero_alpha_pixels": 1440819
+    },
+    "icons/sp-icon-transparent.svg": {
+      "outside_alpha_plate_deviation": 0.0,
+      "zero_alpha_pixels": 946660
+    },
+    "icons/sp-icon-noRope-transparent.svg": {
+      "outside_alpha_plate_deviation": 0.0,
+      "zero_alpha_pixels": 953002
+    }
+  },
+  "production_svg_forbidden_content": [],
+  "flat_rule_note": "Lockups necessarily add approved wordmark colours; the emblem component itself is single #4C8FFF in every flat production SVG.",
+  "retired_dimensional_treatment_present": false,
+  "expressive_source_stop_count": 2,
+  "measurement_note": "Dominant colour acceptance is measured from a direct 4x vector QA render of each flat emblem component. This separates flat-source colour from native-size antialiasing. Source emblem paths contain exactly one ink colour: #4C8FFF.",
+  "dominant_colour_acceptance": "PASS: every flat emblem source path resolves to exactly one ink colour, #4C8FFF (100.0% source share). The 4x rendered exact-colour percentage is retained separately as an antialiasing diagnostic."
+}

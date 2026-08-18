@@ -12,15 +12,23 @@ scripture references. The undertone shows up only through word choice —
 steadfast, anchored, dependable, holds under load, established — never
 explicit.
 
-## Visual identity — already implemented, follow exactly, do not redesign
-- Background: var(--color-ink) #0a0e14
-- Surfaces: var(--color-surface) #11161f, var(--color-surface-2) #171d29
-- Borders: var(--color-line) #232a38
-- Text: var(--color-text) #e8e9ed, muted: var(--color-muted) #8b93a1
-- Accents: var(--color-signal) #2dd4bf (primary, technical), var(--color-wheat)
-  #e8b854 (secondary, use sparingly)
-- Fonts: font-display (Space Grotesk, headlines only), font-sans (IBM Plex
-  Sans, body copy), font-mono (IBM Plex Mono, labels/eyebrows/status text)
+## Visual identity — brand guide v2.1, follow exactly, do not redesign
+See `public/guide/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
+- Background: var(--color-ink) #000413, alternate: var(--color-surface) #050B18
+- Surfaces: var(--color-surface-2) #0A1424
+- Borders: var(--color-line) #16233A
+- Text: var(--color-text) #D9DADC, muted: var(--color-muted) #8E9AAF
+- Accent: var(--color-signal) #4C8FFF (flat, digital default) — var(--color-signal-hi)
+  #5097EE / var(--color-signal-lo) #1356C3 are the expressive-gradient stops,
+  not for flat digital use. No secondary/wheat accent in v2.1.
+- Fonts: font-display and font-sans both resolve to Sora (700 major
+  headings/hero, 600 section headings, 500 labels/subheads/nav, 400 body),
+  font-mono is IBM Plex Mono — sparingly, for the terminal panel, eyebrow
+  labels and status indicators, never body copy.
+- Logo: horizontal lockup is primary (`public/primary/sp-horizontal-*`).
+  Below 24px lockup height use the compact variant (STEADFAST only, no
+  PROTOCOL). Transparent lockups are for dark backgrounds only — never place
+  on mid-tone (~40%+ luminance) fields.
 - Signature motif: a terminal/"connection status" aesthetic — small mono-font
   status indicators, blinking-dot badges like "connection: steadfast"
   (see Footer.tsx for the existing pattern)
