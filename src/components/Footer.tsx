@@ -25,7 +25,7 @@ export default function Footer() {
                 <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] md:gap-8">
                     <div>
                         <Image
-                            src="/primary/sp-horizontal-transparent.svg"
+                            src="/primary/sp-horizontal-compact-transparent.svg"
                             alt="Steadfast Protocol"
                             height={34}
                             width={109}

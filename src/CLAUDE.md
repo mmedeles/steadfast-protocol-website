@@ -25,10 +25,14 @@ See `public/guide/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
   headings/hero, 600 section headings, 500 labels/subheads/nav, 400 body),
   font-mono is IBM Plex Mono — sparingly, for the terminal panel, eyebrow
   labels and status indicators, never body copy.
-- Logo: horizontal lockup is primary (`public/primary/sp-horizontal-*`).
-  Below 24px lockup height use the compact variant (STEADFAST only, no
-  PROTOCOL). Transparent lockups are for dark backgrounds only — never place
-  on mid-tone (~40%+ luminance) fields.
+- Logo: horizontal lockup is primary (`public/primary/sp-horizontal-*`) for
+  placements with room (Open Graph image, email signature, hero/print).
+  Guide §4's 24px compact threshold measures against a clean render, not
+  real-world subpixel rendering — Navbar (44px) and Footer (34px) are both
+  below where PROTOCOL stays legible in practice, so **site chrome always
+  uses the compact variant** (STEADFAST only, no PROTOCOL), full stop, no
+  responsive swap. Transparent lockups are for dark backgrounds only — never
+  place on mid-tone (~40%+ luminance) fields.
 - Signature motif: a terminal/"connection status" aesthetic — small mono-font
   status indicators, blinking-dot badges like "connection: steadfast"
   (see Footer.tsx for the existing pattern)

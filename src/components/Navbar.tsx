@@ -88,18 +88,11 @@ export default function Navbar() {
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center font-mono">
                         <Image
-                            src="/primary/sp-horizontal-transparent.svg"
-                            alt="Steadfast Protocol"
-                            height={44}
-                            width={141}
-                            className="hidden h-11 w-auto md:block"
-                        />
-                        <Image
                             src="/primary/sp-horizontal-compact-transparent.svg"
                             alt="Steadfast Protocol"
                             height={44}
                             width={141}
-                            className="h-11 w-auto md:hidden"
+                            className="h-11 w-auto"
                         />
                     </Link>
 
