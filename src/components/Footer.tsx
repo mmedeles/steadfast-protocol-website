@@ -24,13 +24,23 @@ export default function Footer() {
             <div className="mx-auto max-w-6xl px-6 py-16">
                 <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] md:gap-8">
                     <div>
-                        <Image
-                            src="/01-primary-horizontal/sp-horizontal-transparent.svg"
-                            alt="Steadfast Protocol"
-                            height={64}
-                            width={331}
-                            className="h-16 w-auto"
-                        />
+                        <Link href="/" className="flex items-center gap-3">
+                            <Image
+                                src="/03-icons/sp-icon-transparent.svg"
+                                alt=""
+                                width={80}
+                                height={103}
+                                className="h-20 w-auto"
+                            />
+                            <span className="flex flex-col leading-none">
+                                <span className="font-display text-xl font-bold tracking-[0.08em] text-text">
+                                    STEADFAST
+                                </span>
+                                <span className="font-display text-[0.6rem] font-medium tracking-[1.02em] text-signal mt-1">
+                                    PROTOCOL
+                                </span>
+                            </span>
+                        </Link>
                         <p className="mt-3 max-w-xs text-sm text-muted">
                             Custom software, AI tooling, and workflow automation — built in
                             Bismarck, ND.
@@ -99,8 +109,8 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+17022725337" className={linkClasses}>
-                                    (702) 272-5337
+                                <a href="tel:+17013689524" className={linkClasses}>
+                                    (701) 368-9524
                                 </a>
                             </li>
                             <li className="text-muted">Bismarck, ND</li>

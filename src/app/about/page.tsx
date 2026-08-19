@@ -66,8 +66,8 @@ export default function About() {
                                 <FadeIn key={principle.label} delay={i * 0.1}>
                                     <div className="h-full rounded-lg border border-line bg-surface p-6">
                                         <div className="flex items-center gap-2">
-                                            <principle.icon size={24} className="text-signal" />
-                                            <p className="font-mono text-xs text-signal">
+                                            <principle.icon size={50} className="text-signal" />
+                                            <p className="font-mono text-2xl text-signal">
                                                 {principle.label}
                                             </p>
                                         </div>

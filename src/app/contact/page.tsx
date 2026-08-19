@@ -91,7 +91,7 @@ export default function Contact() {
                                                 </span>
                                             </a>
                                             <a
-                                                href="tel:+17022725337"
+                                                href="tel:+17013689524"
                                                 className="group flex items-start gap-3 border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
                                             >
                                                 <Phone size={24} className="mt-0.5 shrink-0 text-signal" />
@@ -100,7 +100,7 @@ export default function Contact() {
                                                         phone
                                                     </p>
                                                     <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
-                                                        (702) 272-5337
+                                                        (701) 368-9524
                                                     </p>
                                                 </span>
                                             </a>

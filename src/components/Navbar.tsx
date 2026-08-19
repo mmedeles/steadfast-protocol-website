@@ -86,14 +86,23 @@ export default function Navbar() {
         >
             <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-[18px]">
                 <div className="flex items-center gap-8">
-                    <Link href="/" className="flex items-center font-mono">
+                    <Link href="/" className="flex items-center gap-3">
                         <Image
-                            src="/01-primary-horizontal/sp-horizontal-transparent.svg"
-                            alt="Steadfast Protocol"
-                            height={56}
-                            width={290}
-                            className="h-11 w-auto md:h-14"
+                            src="/03-icons/sp-icon-transparent.svg"
+                            alt=""
+                            width={80}
+                            height={103}
+                            className="h-12 w-auto md:h-25"
+                            priority
                         />
+                        <span className="flex flex-col leading-none">
+                            <span className="font-display text-xl font-bold tracking-[0.08em] text-text md:text-2xl">
+                                STEADFAST
+                            </span>
+                            <span className="font-display text-[0.6rem] font-medium tracking-[1.02em] text-signal mt-1 md:text-[0.7rem] md:tracking-[1.06em]">
+                                PROTOCOL
+                            </span>
+                        </span>
                     </Link>
 
                     <nav className="hidden items-center gap-6 md:flex">
