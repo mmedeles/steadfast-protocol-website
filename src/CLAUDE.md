@@ -3,7 +3,8 @@
 ## Business context
 Steadfast Protocol, LLC is a software development, AI tooling, and workflow
 automation consultancy based in North Dakota. Domain: steadfastprotocol.com.
-Contact: mmedeles@steadfastprotocol.com.
+Contact: mmedeles@steadfastprotocol.com, (701) 368-9524
+(tel:+17013689524).
 
 The name is deliberate: "Steadfast" carries a subtle Christian undertone
 (steadfast faith/love) and "Protocol" is straightforward technical/
