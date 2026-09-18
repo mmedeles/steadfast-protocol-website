@@ -14,6 +14,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
+import ServiceTimeline from "@/components/ServiceTimeline";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -36,8 +37,18 @@ const services = [
         icon: Code2,
         tag: "// 01",
         title: "Custom Software Development",
+        // Proof of concept: the timeline replaces the long description for this
+        // service only. The trimmed description keeps what the steps can't show.
+        timeline: [
+            { label: "DISCOVERY", description: "Understand the problem and what success looks like." },
+            { label: "SCOPE", description: "A written proposal with scope and a quote." },
+            { label: "DESIGN", description: "Architecture and interface, agreed before we build." },
+            { label: "BUILD", description: "Engineered to scope, shown to you as it comes together." },
+            { label: "DEPLOY", description: "Launched and wired into what you already use." },
+            { label: "SUSTAIN", description: "Support and updates after go-live." },
+        ],
         description:
-            "This is custom-built software for whatever your business runs on — a customer-facing product, an internal tool, or the system connecting both. We scope the real problem first, then build with technology that fits the job, not whatever's trendy. You get source code you own outright and an architecture sized to your team, not a Silicon Valley playbook. Reach for this when an off-the-shelf tool doesn't fit, or your team has outgrown what spreadsheets and free tiers can handle.",
+            "Customer-facing products, internal tools, or the systems connecting them — built with technology that fits the job, and source code you own outright.",
         goodFit:
             "You need something built around how your business actually works, not the other way around.",
     },
@@ -132,7 +143,12 @@ export default function Services() {
                                     <h2 className="mt-3 font-display text-2xl text-text">
                                         {service.title}
                                     </h2>
-                                    <p className="mt-4 text-sm text-muted md:text-base">
+                                    {"timeline" in service && service.timeline && (
+                                        <div className="mt-8">
+                                            <ServiceTimeline steps={service.timeline} />
+                                        </div>
+                                    )}
+                                    <p className={`${"timeline" in service ? "mt-8" : "mt-4"} text-sm text-muted md:text-base`}>
                                         {service.description}
                                     </p>
                                     <p className="mt-6 border-t border-line pt-4 text-sm text-muted">
