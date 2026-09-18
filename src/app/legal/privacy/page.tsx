@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Privacy Policy | Steadfast Protocol",
     description: "Privacy Policy for Steadfast Protocol, LLC.",
-};
+    path: "/legal/privacy",
+});
 
 const sections = [
     {

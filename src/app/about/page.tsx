@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Shield, Eye, Handshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "About | Steadfast Protocol",
     description:
         "Steadfast Protocol builds software meant to hold up under real-world use, not just impress in a demo.",
-};
+    path: "/about",
+});
 
 const principles = [
     {
@@ -41,7 +42,7 @@ export default function About() {
                     <FadeIn>
                         <p className="font-mono text-xs text-muted">about</p>
                         <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
-                            We build solutions that's meant to hold, not just to launch.
+                            We build solutions that are meant to hold, not just to launch.
                         </h1>
                     </FadeIn>
                     <p className="mt-6 text-base text-muted md:text-lg">

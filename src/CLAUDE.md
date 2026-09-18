@@ -14,16 +14,18 @@ steadfast, anchored, dependable, holds under load, established — never
 explicit.
 
 ## Visual identity — brand guide v2.1, follow exactly, do not redesign
-See `public/docs/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
-Current asset drop lives under `public/01-primary-horizontal/`,
-`02-secondary-stacked/`, `03-icons/`, `04-favicons/`, `05-platform/`,
-`06-monochrome/`, `source/` — the older `public/primary/`, `secondary/`,
-`icons/`, `favicons/`, `platform/`, `guide/` and `qa/QA-REPORT-v2.1.*`
-trees are superseded and unreferenced by any component; safe to delete
-if a cleanup pass ever happens, just hasn't been asked for yet.
+See `brand-source/docs/steadfast-protocol-brand-guide-v2.1.md` for the full spec.
+`public/` is served verbatim, so it holds ONLY files the site references:
+`03-icons/sp-icon-transparent.svg` (navbar/footer emblem), `04-favicons/*`,
+`05-platform/` android-chrome-192/512, apple-touch-icon-180 and
+open-graph-1200x630. The full brand asset drop (lockups, stacked, icon
+variants, monochrome, source masters, QA reports, brand guide, the older
+superseded trees) lives in `brand-source/` at the repo root, which is not
+served. Copy a file into `public/` only when a component starts using it.
 - Background: var(--color-ink) #000413, alternate: var(--color-surface) #050B18
 - Surfaces: var(--color-surface-2) #0A1424
-- Borders: var(--color-line) #16233A
+- Borders: var(--color-line) #16233A. Form field outlines only:
+  var(--color-field-line) #5A6982 (3.32:1 on surface-2 — WCAG 1.4.11)
 - Text: var(--color-text) #D9DADC, muted: var(--color-muted) #8E9AAF
 - Accent: var(--color-signal) #4C8FFF (flat, digital default) — var(--color-signal-hi)
   #5097EE / var(--color-signal-lo) #1356C3 are the expressive-gradient stops,
@@ -32,23 +34,24 @@ if a cleanup pass ever happens, just hasn't been asked for yet.
   headings/hero, 600 section headings, 500 labels/subheads/nav, 400 body),
   font-mono is IBM Plex Mono — sparingly, for the terminal panel, eyebrow
   labels and status indicators, never body copy.
-- Logo: horizontal lockup is primary (`public/01-primary-horizontal/sp-horizontal-*`),
-  used at every breakpoint — no compact/emblem-only fallback. Navbar 56px
-  (md+) / 44px (below md, same source just smaller — bar padding is
-  `py-[18px]` for a ~92px bar at 56px). Footer 64px. Transparent lockups are
-  for dark backgrounds only — never place on mid-tone (~40%+ luminance)
-  fields.
-  **Rebalanced asset (measured, not guessed) — ratios of rendered lockup
-  height, verified via `getBBox()` on the wordmark/emblem paths and
-  cross-checked against the SVG's own `<metadata>`:** emblem ≈70.1%,
-  STEADFAST cap height ≈40.5%, PROTOCOL cap height ≈19.9%. At the current
-  sizes: navbar (56px) → emblem 39px / STEADFAST 22.7px / PROTOCOL 11.1px;
-  footer (64px) → emblem 44.9px / STEADFAST 25.9px / PROTOCOL 12.7px — all
-  crisp at 400% zoom. This is the *same* rebalanced asset as before, just
-  rendered larger — the earlier 40px/48px sizing was legible but small,
-  not a geometry problem. If this asset is ever swapped again, re-measure
-  with `getBBox()` before picking a size — don't assume any of these
-  fraction-of-lockup-height ratios still apply to a new file.
+- Logo (since commit 5a52f34): navbar and footer do NOT use the horizontal
+  lockup SVG. Both render the emblem `public/03-icons/sp-icon-transparent.svg`
+  (1024×1024 viewBox; the visible anchor-shield is ≈72.8% of the box height)
+  next to live Sora text — STEADFAST (700, tracking 0.08em, text-text) over
+  PROTOCOL (500, wide tracking, text-signal). Measured in Chrome:
+  - Navbar md+: emblem box 100px (`md:h-25`, visible ≈72.8px), STEADFAST
+    24px font ≈18px cap height, PROTOCOL 11.2px font ≈9px cap height. Bar
+    padding `md:py-[18px]` → 136px bar.
+  - Navbar <md: emblem box 48px (`h-12`, visible ≈34.9px), STEADFAST 20px
+    ≈15px cap, PROTOCOL 9.6px ≈7px cap. Bar padding `py-3` → 72px bar.
+  - Footer: emblem box 80px (`h-20`, visible ≈58.2px), STEADFAST 20px ≈15px
+    cap, PROTOCOL 9.6px ≈7px cap. The logo link is `w-max` so the lg footer
+    grid reserves its full width (226px) instead of letting it overlap the
+    SERVICES column.
+  Cap heights are canvas `measureText` ascent, ±0.5px. The horizontal
+  lockups in `brand-source/01-primary-horizontal/` remain the brand's
+  primary mark for other media. Transparent assets are for dark backgrounds
+  only — never place on mid-tone (~40%+ luminance) fields.
 - Signature motif: a terminal/"connection status" aesthetic — small mono-font
   status indicators, blinking-dot badges like "connection: steadfast"
   (see Footer.tsx for the existing pattern)

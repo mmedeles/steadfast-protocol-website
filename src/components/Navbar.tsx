@@ -12,8 +12,10 @@ const navLinks = [
     { href: "/contact", label: "Contact" },
 ];
 
+// No display utility here — each call site sets its own, so a `hidden`
+// at the call site can't be silently overridden.
 const ctaClasses =
-    "inline-flex items-center justify-center rounded-md bg-signal px-5 py-2.5 font-sans text-sm font-semibold text-ink transition-all duration-150 ease-out hover:scale-[1.02] hover:bg-signal-hi";
+    "items-center justify-center rounded-md bg-signal px-5 py-2.5 font-sans text-sm font-semibold text-ink transition-all duration-150 ease-out hover:scale-[1.02] hover:bg-signal-hi";
 
 function NavLink({
     href,
@@ -84,7 +86,7 @@ export default function Navbar() {
                     : "border-b border-transparent bg-transparent"
             }`}
         >
-            <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-[18px]">
+            <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3 md:py-[18px]">
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center gap-3">
                         <Image
@@ -165,7 +167,7 @@ export default function Navbar() {
                             <Link
                                 href="/contact"
                                 onClick={() => setOpen(false)}
-                                className={`text-center ${ctaClasses}`}
+                                className={`flex text-center ${ctaClasses}`}
                             >
                                 Book a free discovery call
                             </Link>

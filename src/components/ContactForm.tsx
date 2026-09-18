@@ -12,7 +12,7 @@ const topics = [
 ];
 
 const inputClasses =
-    "w-full rounded-md border border-line bg-surface-2 px-3 py-2 text-sm text-text placeholder:text-muted focus:border-signal focus:outline-none focus:ring-2 focus:ring-signal/30";
+    "w-full rounded-md border border-field-line bg-surface-2 px-3 py-2 text-sm text-text placeholder:text-muted focus:border-signal focus:outline-none focus:ring-2 focus:ring-signal/30";
 
 export default function ContactForm() {
     const [submitted, setSubmitted] = useState(false);

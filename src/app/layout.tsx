@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, IBM_Plex_Mono } from "next/font/google";
 import { MotionConfig } from "framer-motion";
+import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/metadata";
 import "./globals.css";
 
 const sora = Sora({
@@ -15,9 +16,11 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500"],
 });
 
+// Fallback only — every route sets its own title, description and canonical
+// via pageMetadata() in src/lib/metadata.ts.
 export const metadata: Metadata = {
-  metadataBase: new URL("https://steadfastprotocol.com"),
-  title: "Steadfast Protocol | Custom Software, AI Tooling & Automation",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_NAME,
   description:
       "Steadfast Protocol builds custom software, AI tooling, and workflow automation for teams who need it to just work.",
   icons: {
@@ -29,13 +32,8 @@ export const metadata: Metadata = {
     apple: "/05-platform/apple-touch-icon-180.png",
   },
   openGraph: {
-    images: [
-      {
-        url: "/05-platform/open-graph-1200x630.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    siteName: SITE_NAME,
+    images: [OG_IMAGE],
   },
 };
 

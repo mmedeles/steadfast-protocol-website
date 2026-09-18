@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import {
     Code2,
@@ -15,12 +14,14 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Services | Steadfast Protocol",
     description:
         "Custom software development, AI tooling and integration, workflow automation, and technical consulting from Steadfast Protocol.",
-};
+    path: "/services",
+});
 
 const stepIcons: Record<string, LucideIcon> = {
     HANDSHAKE: Phone,

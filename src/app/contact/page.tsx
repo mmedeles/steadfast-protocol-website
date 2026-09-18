@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 import ContactForm from "@/components/ContactForm";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Contact | Steadfast Protocol",
     description:
         "Tell Steadfast Protocol what you're working on, or reach out directly by email or phone.",
-};
+    path: "/contact",
+});
 
 const secondaryButtonClasses =
     "inline-block rounded-md border border-signal/40 px-4 py-2 text-sm text-signal transition-all duration-200 ease-out hover:border-signal hover:bg-signal/10 hover:brightness-125";
@@ -81,11 +82,11 @@ export default function Contact() {
                                                 className="group flex items-start gap-3 border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
                                             >
                                                 <Mail size={24} className="mt-0.5 shrink-0 text-signal" />
-                                                <span>
+                                                <span className="min-w-0">
                                                     <p className="font-mono text-xs text-muted">
                                                         email
                                                     </p>
-                                                    <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
+                                                    <p className="mt-1 text-sm text-text transition-colors wrap-anywhere group-hover:text-signal">
                                                         mmedeles@steadfastprotocol.com
                                                     </p>
                                                 </span>

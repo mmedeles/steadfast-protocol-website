@@ -5,6 +5,8 @@
   --color-surface: #050b18;
   --color-surface-2: #0a1424;
   --color-line: #16233a;
+  /* Form field outlines only — 3.32:1 on surface-2 (WCAG 1.4.11 needs 3:1). */
+  --color-field-line: #5a6982;
   --color-signal: #4c8fff;
   --color-signal-hi: #5097ee;
   --color-signal-lo: #1356c3;

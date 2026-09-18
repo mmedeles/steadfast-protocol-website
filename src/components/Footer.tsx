@@ -15,16 +15,16 @@ const legalLinks = [
     { label: "Terms of Service", href: "/legal/terms" },
 ];
 
-const linkClasses = "text-muted transition-colors hover:text-text";
+const linkClasses = "whitespace-nowrap text-muted transition-colors hover:text-text";
 const headerClasses = "font-mono text-xs tracking-wider text-muted uppercase";
 
 export default function Footer() {
     return (
         <footer className="border-t border-line">
             <div className="mx-auto max-w-6xl px-6 py-16">
-                <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] md:gap-8">
-                    <div>
-                        <Link href="/" className="flex items-center gap-3">
+                <div className="grid gap-10 md:grid-cols-2 md:gap-8 lg:grid-cols-[1.5fr_1fr_1fr_1fr_auto]">
+                    <div className="md:col-span-2 lg:col-span-1">
+                        <Link href="/" className="flex w-max items-center gap-3">
                             <Image
                                 src="/03-icons/sp-icon-transparent.svg"
                                 alt=""
@@ -58,11 +58,11 @@ export default function Footer() {
                                 <li key={label}>
                                     <Link
                                         href="/services"
-                                        className={`group inline-flex items-center gap-1 ${linkClasses}`}
+                                        className={`group relative ${linkClasses}`}
                                     >
                                         <ChevronRight
                                             size={14}
-                                            className="opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                                            className="absolute top-1/2 -left-4 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
                                         />
                                         {label}
                                     </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="mailto:mmedeles@steadfastprotocol.com"
-                                    className={linkClasses}
+                                    className="text-muted transition-colors wrap-anywhere hover:text-text"
                                 >
                                     mmedeles@steadfastprotocol.com
                                 </a>

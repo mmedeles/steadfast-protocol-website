@@ -6,6 +6,14 @@ import ConnectionTerminal from "@/components/ConnectionTerminal";
 import FadeIn from "@/components/FadeIn";
 import ProcessConnectorLine from "@/components/ProcessConnectorLine";
 import ProcessTimeline from "@/components/ProcessTimeline";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+    title: "Custom Software, AI Tooling & Workflow Automation | Steadfast Protocol",
+    description:
+        "Custom software, AI tooling, and workflow automation from Bismarck, North Dakota — built to keep working long after launch.",
+    path: "/",
+});
 
 const trustSignals = [
     "You get it in writing before you spend a cent",
@@ -109,14 +117,14 @@ export default function Home() {
                                     See what we build →
                                 </Link>
                             </div>
-                            <div className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted">
-                                {trustSignals.map((signal, i) => (
-                                    <span key={signal} className="flex items-center gap-2">
-                                        {i > 0 && <span aria-hidden="true">·</span>}
+                            <ul className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
+                                {trustSignals.map((signal) => (
+                                    <li key={signal} className="flex items-center gap-2">
+                                        <span aria-hidden="true">·</span>
                                         <span>{signal}</span>
-                                    </span>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                             <div className="mt-4 flex flex-wrap items-center gap-2">
                                 {proofBadges.map((badge) => (
                                     <span
