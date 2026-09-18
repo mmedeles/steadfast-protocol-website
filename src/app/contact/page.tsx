@@ -39,7 +39,7 @@ export default function Contact() {
                         <div className="grid gap-8 lg:grid-cols-5 lg:gap-10">
                             <FadeIn className="lg:col-span-3">
                                 <div className="rounded-lg border border-line bg-surface p-6 md:p-8">
-                                    <p className="font-mono text-xs text-signal">
+                                    <p className="font-mono text-sm text-signal">
                                         // send a message
                                     </p>
                                     <h2 className="mt-3 font-display text-xl text-text md:text-2xl">
@@ -54,7 +54,7 @@ export default function Contact() {
                             <div className="flex flex-col gap-6 lg:col-span-2">
                                 <FadeIn delay={0}>
                                     <div className="rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-xs text-signal">
+                                        <p className="font-mono text-sm text-signal">
                                             // book a call
                                         </p>
                                         <p className="mt-3 text-sm text-muted">
@@ -73,7 +73,7 @@ export default function Contact() {
 
                                 <FadeIn delay={0.1}>
                                     <div className="rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-xs text-signal">
+                                        <p className="font-mono text-sm text-signal">
                                             // direct contact
                                         </p>
                                         <div className="mt-4 space-y-4">
@@ -83,7 +83,7 @@ export default function Contact() {
                                             >
                                                 <Mail size={24} className="mt-0.5 shrink-0 text-signal" />
                                                 <span className="min-w-0">
-                                                    <p className="font-mono text-xs text-muted">
+                                                    <p className="font-mono text-sm text-text">
                                                         email
                                                     </p>
                                                     <p className="mt-1 text-sm text-text transition-colors wrap-anywhere group-hover:text-signal">
@@ -92,16 +92,16 @@ export default function Contact() {
                                                 </span>
                                             </a>
                                             <a
-                                                href="tel:+17013689524"
+                                                href="tel:+17022725337"
                                                 className="group flex items-start gap-3 border-l-2 border-transparent pl-3 transition-colors hover:border-signal"
                                             >
                                                 <Phone size={24} className="mt-0.5 shrink-0 text-signal" />
                                                 <span>
-                                                    <p className="font-mono text-xs text-muted">
+                                                    <p className="font-mono text-sm text-text">
                                                         phone
                                                     </p>
                                                     <p className="mt-1 text-sm text-text transition-colors group-hover:text-signal">
-                                                        (701) 368-9524
+                                                        (702) 272-5337
                                                     </p>
                                                 </span>
                                             </a>
@@ -111,7 +111,7 @@ export default function Contact() {
 
                                 <FadeIn delay={0.2}>
                                     <div className="rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-xs text-signal">
+                                        <p className="font-mono text-sm text-signal">
                                             // based in
                                         </p>
                                         <p className="mt-3 flex items-start gap-2 text-sm text-muted">

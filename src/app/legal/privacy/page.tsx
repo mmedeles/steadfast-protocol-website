@@ -9,31 +9,35 @@ export const metadata = pageMetadata({
 
 const sections = [
     {
+        heading: "Who We Are",
+        body: "This policy covers steadfastprotocol.com, operated by Steadfast Protocol, LLC, a software development and automation consultancy based in Bismarck, North Dakota. It explains what information we collect through this site and what we do with it.",
+    },
+    {
         heading: "Information We Collect",
-        body: "We collect information you provide directly, such as your name and email address when you submit the contact form. We may also collect basic analytics data about how visitors use this site, such as page views, if analytics tools are enabled. We do not collect personal information without your knowledge, and you're never required to provide more than what's needed to respond to your inquiry.",
+        body: "When you contact us through the contact form, you give us your name and email address, and optionally your company name, the topic of your inquiry, and your message. The same applies if you email or call us directly. We don't ask for more than we need to respond, and we don't collect information about you from other sources.",
+    },
+    {
+        heading: "Analytics and Cookies",
+        body: "This site does not currently use analytics, advertising, or tracking cookies. If we add analytics in the future, it will be limited to basic usage information such as page views, and we'll update this policy before it's turned on. Like any website, our hosting provider may keep standard technical logs, such as IP addresses and request times, to operate and secure the site.",
     },
     {
         heading: "How We Use Your Information",
-        body: "Information submitted through this site is used only to respond to your inquiry and, if you become a client, to deliver the services outlined in your agreement. We do not sell your information, and we do not share it with third parties for marketing purposes. Any use beyond responding to your request would require your separate agreement.",
+        body: "We use what you send us to respond to your inquiry and, if we end up working together, to scope and deliver the project. That's it. We don't sell your information, rent it, or share it with anyone for marketing purposes.",
     },
     {
-        heading: "Data Retention",
-        body: "Contact form submissions are retained only as long as necessary to respond to your inquiry or fulfill an active engagement. We do not maintain long-term storage of personal data beyond that purpose unless you've agreed to a longer retention period as part of a service agreement. You may request earlier deletion at any time.",
+        heading: "How Long We Keep It",
+        body: "We keep inquiry details only as long as we need them to respond or to carry out an engagement. Records for client projects are kept as long as the client agreement requires or as needed for ordinary business and tax purposes.",
     },
     {
-        heading: "Third-Party Services",
-        body: "This site may rely on third-party tools for functions like hosting and analytics. Each of those providers maintains its own privacy practices and data handling policies, which are outside our direct control. We choose providers we believe handle data responsibly, but we encourage you to review their policies if you have concerns.",
-    },
-    {
-        heading: "Your Rights",
-        body: "You may request access to, or deletion of, any personal data we hold about you at any time. To make a request, contact us directly at mmedeles@steadfastprotocol.com. We'll respond to reasonable requests as promptly as we can.",
+        heading: "Your Choices",
+        body: "You can ask us at any time what information we hold about you, or ask us to correct or delete it. Send the request to mmedeles@steadfastprotocol.com and we'll take care of it, unless we're required to keep something for legal or accounting reasons, in which case we'll tell you.",
     },
     {
         heading: "Changes to This Policy",
-        body: "This policy may be updated from time to time to reflect changes in our practices or for legal and regulatory reasons. We'll update the date above whenever changes are made. Continued use of this site after changes are posted constitutes acceptance of the updated policy.",
+        body: "If our practices change, we'll update this page and the date at the top of it.",
     },
 ];
 
 export default function PrivacyPolicy() {
-    return <LegalPage title="Privacy Policy" sections={sections} />;
+    return <LegalPage title="Privacy Policy" lastUpdated="September 18, 2026" sections={sections} />;
 }

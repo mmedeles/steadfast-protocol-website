@@ -28,7 +28,7 @@ export default function ContactForm() {
     if (submitted) {
         return (
             <div className="flex min-h-[360px] flex-col items-center justify-center text-center">
-                <p className="font-mono text-xs text-signal">// message sent</p>
+                <p className="font-mono text-sm text-signal">// message sent</p>
                 <p className="mt-3 text-lg text-text">
                     Message received. We&apos;ll be in touch.
                 </p>
@@ -40,7 +40,7 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid gap-5 sm:grid-cols-2">
                 <div>
-                    <label htmlFor="name" className="block font-mono text-xs text-muted">
+                    <label htmlFor="name" className="block font-mono text-sm text-text">
                         Full Name <span className="text-signal">*</span>
                     </label>
                     <input
@@ -52,7 +52,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="email" className="block font-mono text-xs text-muted">
+                    <label htmlFor="email" className="block font-mono text-sm text-text">
                         Email <span className="text-signal">*</span>
                     </label>
                     <input
@@ -67,7 +67,7 @@ export default function ContactForm() {
 
             <div className="grid gap-5 sm:grid-cols-2">
                 <div>
-                    <label htmlFor="company" className="block font-mono text-xs text-muted">
+                    <label htmlFor="company" className="block font-mono text-sm text-text">
                         Company
                     </label>
                     <input
@@ -78,7 +78,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="topic" className="block font-mono text-xs text-muted">
+                    <label htmlFor="topic" className="block font-mono text-sm text-text">
                         Topic
                     </label>
                     <div className="relative mt-2">
@@ -102,7 +102,7 @@ export default function ContactForm() {
             </div>
 
             <div>
-                <label htmlFor="message" className="block font-mono text-xs text-muted">
+                <label htmlFor="message" className="block font-mono text-sm text-text">
                     Message <span className="text-signal">*</span>
                 </label>
                 <textarea
@@ -122,11 +122,11 @@ export default function ContactForm() {
                 <span className="relative">Send message →</span>
             </button>
 
-            <p className="font-mono text-xs text-muted">
+            <p className="font-mono text-sm text-text">
                 or reach us directly at{" "}
                 <a
                     href="mailto:mmedeles@steadfastprotocol.com"
-                    className="text-muted underline-offset-2 transition-colors hover:text-text hover:underline"
+                    className="text-text underline-offset-2 transition-colors wrap-anywhere hover:text-signal hover:underline"
                 >
                     mmedeles@steadfastprotocol.com
                 </a>

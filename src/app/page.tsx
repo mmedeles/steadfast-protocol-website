@@ -90,8 +90,14 @@ export default function Home() {
                     <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
                         <div>
                             <FadeIn>
-                                <p className="font-mono text-xs text-muted">
-                                    Software, AI tooling, automation — that’s the job.
+                                {/*
+                                  Hero eyebrow options (plain statement of what we do):
+                                  1. Custom software, AI tooling and workflow automation  ← in use
+                                  2. Software development and automation for North Dakota businesses
+                                  3. We build custom software, AI tools and automations
+                                */}
+                                <p className="font-mono text-sm text-text">
+                                    Custom software, AI tooling and workflow automation
                                 </p>
                                 <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-text md:text-5xl">
                                     Demos are easy. We build what comes after.
@@ -117,9 +123,9 @@ export default function Home() {
                                     See what we build →
                                 </Link>
                             </div>
-                            <ul className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
+                            <ul className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-text">
                                 {trustSignals.map((signal) => (
-                                    <li key={signal} className="flex items-center gap-2">
+                                    <li key={signal} className="flex items-baseline gap-2">
                                         <span aria-hidden="true">·</span>
                                         <span>{signal}</span>
                                     </li>
@@ -129,7 +135,7 @@ export default function Home() {
                                 {proofBadges.map((badge) => (
                                     <span
                                         key={badge.label}
-                                        className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1 text-xs text-muted"
+                                        className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1 text-sm text-text"
                                     >
                                         <badge.icon size={14} className="text-signal" />
                                         {badge.label}
@@ -145,7 +151,7 @@ export default function Home() {
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-6xl px-6 py-20">
                         <FadeIn>
-                            <p className="font-mono text-xs text-muted">what we do</p>
+                            <p className="font-mono text-sm text-text">what we do</p>
                             <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
                                 Where we help
                             </h2>
@@ -158,7 +164,7 @@ export default function Home() {
                                         <div className="inline-flex items-center justify-center rounded-lg bg-surface-2 p-2">
                                             <service.icon size={28} className="text-signal" />
                                         </div>
-                                        <p className="mt-4 font-mono text-xs text-signal">
+                                        <p className="mt-4 font-mono text-sm text-signal">
                                             {service.tag}
                                         </p>
                                         <h3 className="mt-2 font-display text-lg text-text">
@@ -177,7 +183,7 @@ export default function Home() {
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-6xl px-6 py-20">
                         <FadeIn>
-                            <p className="font-mono text-xs text-muted">process</p>
+                            <p className="font-mono text-sm text-text">process</p>
                             <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
                                 How a project runs
                             </h2>
@@ -193,13 +199,12 @@ export default function Home() {
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
-                            <p className="font-mono text-xs text-muted">about</p>
+                            <p className="font-mono text-sm text-text">about</p>
                         </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
                             We’d rather build something boring that keeps working than
-                            something clever that impresses for a week and breaks the next.
-                            You’re the one who has to live with it — so that’s who we build
-                            for.
+                            something clever that breaks next week. You’re the one who lives
+                            with it.
                         </p>
                         <Link
                             href="/about"
@@ -212,14 +217,13 @@ export default function Home() {
 
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-                        <div className="inline-flex items-center gap-2 font-mono text-xs text-muted">
+                        <div className="inline-flex items-center gap-2 font-mono text-sm text-text">
                             <span className="h-2 w-2 rounded-full bg-signal" />
                             based in Bismarck, ND
                         </div>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            We’re in Bismarck, North Dakota — not a co-working space in some
-                            “tech hub” pretending otherwise. We work with clients across the
-                            state, in person if that’s easier or fully remote if it’s not.
+                            We’re in Bismarck, North Dakota — not a far-off “tech hub.” We
+                            work with clients across the state, in person or fully remote.
                         </p>
                     </div>
                 </section>

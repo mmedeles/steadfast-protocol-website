@@ -17,19 +17,19 @@ const principles = [
         icon: Shield,
         label: "DURABLE",
         title: "Built for the six-month mark, not the kickoff meeting.",
-        body: "A demo only has to work once, in front of a friendly audience. Production has to work every day, under real data and real users who never read the documentation. We design for that second case from the start, favoring tools we can keep running over ones that just look impressive on day one.",
+        body: "A demo works once. We build for every day after.",
     },
     {
         icon: Eye,
         label: "TRANSPARENT",
         title: "You understand what you're getting.",
-        body: "We explain what we're building and why, in plain language, not jargon that keeps you dependent on us. You get the source code, the infrastructure access, and a straight answer whenever you ask how something works.",
+        body: "Plain answers, your source code, and full access.",
     },
     {
         icon: Handshake,
         label: "CONNECTED",
         title: "The relationship doesn't end at launch.",
-        body: "Launch day isn't the finish line, it's when the solution starts actually getting used, which is when real questions come up. We stay reachable after deployment instead of disappearing once the invoice clears.",
+        body: "We stay reachable after launch, when real questions start.",
     },
 ];
 
@@ -40,7 +40,7 @@ export default function About() {
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-16 text-center">
                     <FadeIn>
-                        <p className="font-mono text-xs text-muted">about</p>
+                        <p className="font-mono text-sm text-text">about</p>
                         <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
                             We build solutions that are meant to hold, not just to launch.
                         </h1>
@@ -56,13 +56,13 @@ export default function About() {
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-6xl px-6 py-20">
                         <FadeIn>
-                            <p className="font-mono text-xs text-muted">principles</p>
+                            <p className="font-mono text-sm text-text">principles</p>
                             <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
                                 What that looks like in practice
                             </h2>
                         </FadeIn>
 
-                        <div className="mt-10 grid gap-6 md:grid-cols-3">
+                        <div className="mt-10 grid gap-6 lg:grid-cols-3">
                             {principles.map((principle, i) => (
                                 <FadeIn key={principle.label} delay={i * 0.1}>
                                     <div className="h-full rounded-lg border border-line bg-surface p-6">
@@ -86,15 +86,15 @@ export default function About() {
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
-                            <p className="font-mono text-xs text-muted">how we work</p>
+                            <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
+                                How we work
+                            </h2>
                         </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            We work the way most good working relationships do: a real
-                            conversation up front, a clear written plan, and regular check-ins
-                            while the work is happening. No surprise invoices, no
-                            disappearing for weeks at a time. We're based in Bismarck, North
-                            Dakota, and work with clients across the state, in person when
-                            that's useful and fully remote when it's not.
+                            A real conversation up front, a clear written plan, and regular
+                            check-ins while the work happens. No surprise invoices, no
+                            disappearing for weeks. We're based in Bismarck and work with
+                            clients across North Dakota, in person or remote.
                         </p>
                     </div>
                 </section>

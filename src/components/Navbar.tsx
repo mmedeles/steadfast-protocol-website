@@ -33,7 +33,7 @@ function NavLink({
         <Link
             href={href}
             onClick={onClick}
-            className={`group relative font-sans text-sm font-medium transition-colors duration-200 ease-out ${
+            className={`group relative font-sans text-base font-medium transition-colors duration-200 ease-out ${
                 isActive ? "text-text" : "text-muted hover:text-text"
             }`}
         >
@@ -88,7 +88,7 @@ export default function Navbar() {
         >
             <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3 md:py-[18px]">
                 <div className="flex items-center gap-8">
-                    <Link href="/" className="flex items-center gap-3">
+                    <Link href="/" className="flex shrink-0 items-center gap-3">
                         <Image
                             src="/03-icons/sp-icon-transparent.svg"
                             alt=""
@@ -107,7 +107,7 @@ export default function Navbar() {
                         </span>
                     </Link>
 
-                    <nav className="hidden items-center gap-6 md:flex">
+                    <nav className="hidden items-center gap-6 md:flex lg:gap-8">
                         {navLinks.map((link) => (
                             <NavLink key={link.href} href={link.href} label={link.label} />
                         ))}
@@ -115,7 +115,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex items-center justify-end gap-4">
-                    <Link href="/contact" className={`ml-auto hidden md:inline-flex ${ctaClasses}`}>
+                    <Link href="/contact" className={`ml-auto hidden lg:inline-flex ${ctaClasses}`}>
                         Book a free discovery call
                     </Link>
 

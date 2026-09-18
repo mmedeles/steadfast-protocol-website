@@ -7,29 +7,27 @@ type Section = { heading: string; body: string };
 
 export default function LegalPage({
     title,
+    lastUpdated,
     sections,
 }: {
     title: string;
+    // Static, human-set date (e.g. "September 18, 2026") — change it only
+    // when the page content changes, never derive it from the build.
+    lastUpdated: string;
     sections: Section[];
 }) {
-    const lastUpdated = new Date().toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-    });
-
     return (
         <>
             <Navbar />
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-12">
                     <FadeIn>
-                        <p className="font-mono text-xs text-muted">// legal</p>
+                        <p className="font-mono text-sm text-text">// legal</p>
                         <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
                             {title}
                         </h1>
                     </FadeIn>
-                    <div className="mt-4 flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                    <div className="mt-4 flex flex-wrap items-center gap-2 font-mono text-sm text-text">
                         <span>Last updated: {lastUpdated}</span>
                         <span aria-hidden="true">·</span>
                         <span>Steadfast Protocol, LLC</span>
@@ -45,13 +43,7 @@ export default function LegalPage({
                 <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-16">
                         <FadeIn>
-                            <div className="rounded-md border border-amber-400/30 bg-amber-400/10 px-4 py-3 text-sm text-amber-400">
-                                This document is a placeholder. It has not been reviewed by
-                                legal counsel and does not constitute legal advice or create
-                                binding obligations. Replace before publishing.
-                            </div>
-
-                            <div className="mt-10 space-y-8">
+                            <div className="space-y-8">
                                 {sections.map((section, i) => (
                                     <div key={section.heading}>
                                         <h2 className="font-sans text-base font-semibold text-text">
@@ -66,15 +58,22 @@ export default function LegalPage({
 
                             <div className="mt-12 border-t border-line pt-8">
                                 <h2 className="font-sans text-base font-semibold text-text">
-                                    Questions about this policy?
+                                    Questions?
                                 </h2>
                                 <p className="mt-2 text-sm text-muted md:text-base">
-                                    Reach out at{" "}
+                                    Contact Steadfast Protocol, LLC at{" "}
                                     <a
                                         href="mailto:mmedeles@steadfastprotocol.com"
-                                        className="text-signal hover:underline"
+                                        className="text-signal wrap-anywhere hover:underline"
                                     >
                                         mmedeles@steadfastprotocol.com
+                                    </a>{" "}
+                                    or{" "}
+                                    <a
+                                        href="tel:+17022725337"
+                                        className="whitespace-nowrap text-signal hover:underline"
+                                    >
+                                        (702) 272-5337
                                     </a>
                                     .
                                 </p>

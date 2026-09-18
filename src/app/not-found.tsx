@@ -13,7 +13,7 @@ export default function NotFound() {
             <Navbar />
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-24 text-center md:pt-28">
-                    <div className="inline-flex items-center gap-2 font-mono text-xs text-muted">
+                    <div className="inline-flex items-center gap-2 font-mono text-sm text-text">
                         <span className="h-2 w-2 rounded-full bg-signal" />
                         status: 404 — route not found
                     </div>

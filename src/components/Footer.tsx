@@ -16,7 +16,7 @@ const legalLinks = [
 ];
 
 const linkClasses = "whitespace-nowrap text-muted transition-colors hover:text-text";
-const headerClasses = "font-mono text-xs tracking-wider text-muted uppercase";
+const headerClasses = "font-mono text-sm tracking-wider text-text uppercase";
 
 export default function Footer() {
     return (
@@ -109,8 +109,8 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+17013689524" className={linkClasses}>
-                                    (701) 368-9524
+                                <a href="tel:+17022725337" className={linkClasses}>
+                                    (702) 272-5337
                                 </a>
                             </li>
                             <li className="text-muted">Bismarck, ND</li>
@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
 
             <div className="border-t border-line">
-                <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+                <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-sm text-text sm:flex-row sm:items-center sm:justify-between">
                     <p>© {new Date().getFullYear()} Steadfast Protocol, LLC</p>
                     <p>Built in North Dakota.</p>
                 </div>

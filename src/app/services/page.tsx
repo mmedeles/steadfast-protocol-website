@@ -105,7 +105,7 @@ export default function Services() {
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-16 text-center">
                     <FadeIn>
-                        <p className="font-mono text-xs text-muted">services</p>
+                        <p className="font-mono text-sm text-text">services</p>
                         <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
                             What we build
                         </h1>
@@ -126,7 +126,7 @@ export default function Services() {
                                     <div className="inline-flex items-center justify-center rounded-lg bg-surface-2 p-2">
                                         <service.icon size={28} className="text-signal" />
                                     </div>
-                                    <p className="mt-4 font-mono text-xs text-signal">
+                                    <p className="mt-4 font-mono text-sm text-signal">
                                         {service.tag}
                                     </p>
                                     <h2 className="mt-3 font-display text-2xl text-text">
@@ -136,7 +136,7 @@ export default function Services() {
                                         {service.description}
                                     </p>
                                     <p className="mt-6 border-t border-line pt-4 text-sm text-muted">
-                                        <span className="font-mono text-xs tracking-wide text-signal">
+                                        <span className="font-mono text-sm tracking-wide text-signal">
                                             good fit if —
                                         </span>{" "}
                                         {service.goodFit}
@@ -150,7 +150,7 @@ export default function Services() {
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-4xl px-6 py-20">
                         <FadeIn>
-                            <p className="font-mono text-xs text-muted">process</p>
+                            <p className="font-mono text-sm text-text">process</p>
                             <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
                                 How a project runs
                             </h2>
@@ -171,7 +171,7 @@ export default function Services() {
                                                 )}
                                             </div>
                                             <div className="pb-2">
-                                                <p className="font-mono text-xs tracking-wide text-signal">
+                                                <p className="font-mono text-sm tracking-wide text-signal">
                                                     {step.code}
                                                 </p>
                                                 <p className="mt-2 text-sm text-muted md:text-base">
@@ -196,21 +196,13 @@ export default function Services() {
                         <p className="mt-4 text-base text-muted md:text-lg">
                             Book a free discovery call, or reach out directly.
                         </p>
-                        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                            <Link
-                                href="/contact"
-                                className="group relative inline-block overflow-hidden rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
-                            >
-                                <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
-                                <span className="relative">Book a free discovery call</span>
-                            </Link>
-                            <a
-                                href="mailto:mmedeles@steadfastprotocol.com"
-                                className="text-sm text-muted transition-colors hover:text-text"
-                            >
-                                mmedeles@steadfastprotocol.com
-                            </a>
-                        </div>
+                        <Link
+                            href="/contact"
+                            className="group relative mt-8 inline-block overflow-hidden rounded-md bg-signal px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-signal/90"
+                        >
+                            <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+                            <span className="relative">Book a free discovery call</span>
+                        </Link>
                     </div>
                 </section>
             </main>

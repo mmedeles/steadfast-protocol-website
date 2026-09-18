@@ -71,7 +71,7 @@ export default function ProcessTimeline({ steps }: { steps: Step[] }) {
                         <Icon size={16} />
                     </motion.span>
                     <div>
-                        <p className="font-mono text-xs tracking-wide text-signal">
+                        <p className="font-mono text-sm tracking-wide text-signal">
                             {step.code}
                         </p>
                         <p className="mt-1 text-sm text-muted">{step.description}</p>
