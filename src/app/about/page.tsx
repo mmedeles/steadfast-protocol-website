@@ -3,6 +3,7 @@ import { Shield, Eye, Handshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
+import FounderBio from "@/components/FounderBio";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -56,6 +57,18 @@ export default function About() {
                 <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-6xl px-6 py-20">
                         <FadeIn>
+                            <p className="font-mono text-sm text-text">who you&apos;re working with</p>
+                            <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
+                                Hi, I&apos;m [NAME].
+                            </h2>
+                        </FadeIn>
+                        <FounderBio />
+                    </div>
+                </section>
+
+                <section className="border-t border-line">
+                    <div className="mx-auto max-w-6xl px-6 py-20">
+                        <FadeIn>
                             <p className="font-mono text-sm text-text">principles</p>
                             <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
                                 What that looks like in practice
@@ -83,7 +96,7 @@ export default function About() {
                     </div>
                 </section>
 
-                <section className="border-t border-line">
+                <section className="border-t border-line bg-surface/40">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
                             <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
@@ -99,7 +112,7 @@ export default function About() {
                     </div>
                 </section>
 
-                <section className="border-t border-line bg-surface/40">
+                <section className="border-t border-line">
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
                             <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
