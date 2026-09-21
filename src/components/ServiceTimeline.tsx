@@ -51,14 +51,22 @@ function timelineCss(n: number) {
     return css;
 }
 
+// Render once per page with every step count in use. Kept separate from
+// ServiceTimeline so N timelines don't serialize N copies of the CSS into the
+// page payload. Without it, timelines simply show their completed state.
+export function ServiceTimelineStyles({ counts }: { counts: number[] }) {
+    return (
+        <style href="service-timeline" precedence="default">
+            {[...new Set(counts)].map(timelineCss).join("")}
+        </style>
+    );
+}
+
 export default function ServiceTimeline({ steps }: { steps: TimelineStep[] }) {
     const n = steps.length;
 
     return (
         <TimelinePlayer>
-            <style href={`service-timeline-${n}`} precedence="default">
-                {timelineCss(n)}
-            </style>
             <ol className={`sp-n${n} grid gap-6 lg:gap-4`}>
                 {steps.map((step, i) => (
                     <li key={step.label} className={`sp-step-${i} relative flex gap-4 lg:flex-col lg:gap-0`}>

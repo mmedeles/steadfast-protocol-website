@@ -14,7 +14,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
-import ServiceTimeline from "@/components/ServiceTimeline";
+import ServiceTimeline, { ServiceTimelineStyles } from "@/components/ServiceTimeline";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -37,11 +37,11 @@ const services = [
         icon: Code2,
         tag: "// 01",
         title: "Custom Software Development",
-        // Proof of concept: the timeline replaces the long description for this
-        // service only. The trimmed description keeps what the steps can't show.
+        // Each service's timeline shows how it's delivered; the trimmed
+        // description beneath it keeps what the steps can't show.
         timeline: [
             { label: "DISCOVERY", description: "Understand the problem and what success looks like." },
-            { label: "SCOPE", description: "A written proposal with scope and a quote." },
+            { label: "SCOPE", description: "A written proposal with a fixed quote." },
             { label: "DESIGN", description: "Architecture and interface, agreed before we build." },
             { label: "BUILD", description: "Engineered to scope, shown to you as it comes together." },
             { label: "DEPLOY", description: "Launched and wired into what you already use." },
@@ -56,8 +56,16 @@ const services = [
         icon: Cpu,
         tag: "// 02",
         title: "AI Tooling & Integration",
+        timeline: [
+            { label: "BOTTLENECK", description: "Find the task that's repetitive and expensive." },
+            { label: "FEASIBILITY", description: "Confirm AI is the right tool, not just the new one." },
+            { label: "GUARDRAILS", description: "Decide what the model may and may not decide alone." },
+            { label: "INTEGRATE", description: "Wired into the systems your team already uses." },
+            { label: "EVALUATE", description: "Accuracy and cost measured against the manual process." },
+            { label: "SUSTAIN", description: "Monitored, adjusted, and supported after go-live." },
+        ],
         description:
-            "AI work that starts with a real bottleneck, not a feature checklist. We integrate language models and AI services into your existing systems — drafting, summarizing, classifying, or extracting data from documents you currently handle by hand. You get a tool that fits into your existing workflow, with sensible guardrails around cost, accuracy, and what the AI is and isn't allowed to decide on its own. This is the right call when a task is repetitive enough to automate but judgment-heavy enough that simple rules won't cut it.",
+            "Language models and AI services for work you currently do by hand — drafting, summarizing, classifying, or pulling data out of documents.",
         goodFit:
             "You have a task that eats hours every week and depends on reading or judgment, not just data entry.",
     },
@@ -65,8 +73,16 @@ const services = [
         icon: GitBranch,
         tag: "// 03",
         title: "Workflow Automation",
+        timeline: [
+            { label: "MAP", description: "Document how the work actually happens today." },
+            { label: "IDENTIFY", description: "Find the steps worth automating and the ones to keep human." },
+            { label: "DESIGN", description: "Plan the automation and its failure cases." },
+            { label: "BUILD", description: "Implemented against your real systems and data." },
+            { label: "HANDOVER", description: "Your team runs it, with documentation they can follow." },
+            { label: "SUSTAIN", description: "Support and adjustment as the process changes." },
+        ],
         description:
-            "We connect the tools your team already uses and remove the manual steps between them — the copy-pasting between systems, the status checks, the same five-minute task repeated fifty times a week. You get a system that runs in the background and tells you when something needs your attention, instead of the other way around. This is for teams who've hit the point where doing it manually is costing more than it should.",
+            "The copy-pasting between systems, the status checks, the same five-minute task fifty times a week — replaced by a system that runs in the background and tells you when something needs attention.",
         goodFit:
             "The same manual process happens on a schedule, and nobody on your team enjoys doing it.",
     },
@@ -74,8 +90,15 @@ const services = [
         icon: Users,
         tag: "// 04",
         title: "Technical Consulting & Dev Shop Collaboration",
+        timeline: [
+            { label: "LISTEN", description: "Understand the decision you're actually facing." },
+            { label: "ASSESS", description: "Review the systems, constraints, and options." },
+            { label: "OPTIONS", description: "Lay out the realistic paths and their tradeoffs." },
+            { label: "RECOMMEND", description: "A clear written recommendation, not a menu." },
+            { label: "SUPPORT", description: "Hands-on help while you act on it, alongside your team if needed." },
+        ],
         description:
-            "Sometimes you don't need a full project — you need someone who already knows how to build this to look at what you have. We do architecture reviews, code audits, and embedded work alongside your team or another dev shop on a project that's already underway. You get a second set of experienced eyes, a clear read on what's solid and what's risky, and hands-on help filling a gap, without the cost or timeline of a full-time hire.",
+            "Architecture reviews, code audits, or embedded work alongside your team or another dev shop on a project already underway — a second set of experienced eyes and hands-on help, without the cost of a full-time hire.",
         goodFit:
             "You have a team or a dev shop already in motion, and need someone to validate the approach or fill a skills gap.",
     },
@@ -114,6 +137,7 @@ export default function Services() {
         <>
             <Navbar />
             <main>
+                <ServiceTimelineStyles counts={services.map((s) => s.timeline.length)} />
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-16 text-center">
                     <FadeIn>
                         <p className="font-mono text-sm text-text">services</p>
@@ -143,12 +167,10 @@ export default function Services() {
                                     <h2 className="mt-3 font-display text-2xl text-text">
                                         {service.title}
                                     </h2>
-                                    {"timeline" in service && service.timeline && (
-                                        <div className="mt-8">
-                                            <ServiceTimeline steps={service.timeline} />
-                                        </div>
-                                    )}
-                                    <p className={`${"timeline" in service ? "mt-8" : "mt-4"} text-sm text-muted md:text-base`}>
+                                    <div className="mt-8">
+                                        <ServiceTimeline steps={service.timeline} />
+                                    </div>
+                                    <p className="mt-8 text-sm text-muted md:text-base">
                                         {service.description}
                                     </p>
                                     <p className="mt-6 border-t border-line pt-4 text-sm text-muted">
