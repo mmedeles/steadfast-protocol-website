@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     icon: [
       { url: "/04-favicons/favicon.svg", type: "image/svg+xml" },
       { url: "/04-favicons/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/04-favicons/favicon.ico", sizes: "any" },
+      // Root .ico carries all three native masters (16/32/48).
+      { url: "/favicon.ico", sizes: "any" },
     ],
     apple: "/05-platform/apple-touch-icon-180.png",
   },
