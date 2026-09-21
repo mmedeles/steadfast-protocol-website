@@ -2,6 +2,33 @@
 
 **Version 2.1 · 17 August 2026**
 
+> **v2.2 artwork update · 21 September 2026.** The canonical emblem and the
+> three primary horizontal lockups were rebuilt as clean vectors. The v2.1
+> artwork was a bitmap trace (849 segments, no curves, coordinates snapped to
+> whole pixels) that rendered correctly on screen but faceted in print. v2.2 is
+> a geometric reconstruction of the same mark, fitted to the trace by
+> measurement, in the same coordinate frame (`viewBox 1 1 639 820`), so it drops
+> into existing wrappers unchanged.
+>
+> Deliberate departures from the trace:
+> - **Uniform border weights.** The traced outer border varied 17–23 units and
+>   the inner inset 28–34.5; v2.2 uses 20 / 11 gap / 3 throughout. Largest
+>   shift 3.4 units, at the top and bottom of the inner border.
+> - **Rope redrawn.** Same path and arrangement at one consistent diameter
+>   (20 units; the trace varied 16–25), with clean twist gaps, tapered ends
+>   behind the shaft, and the two wraps sitting against each other. The knot is
+>   about 16 units shorter.
+> - **PROTOCOL tracking 1.187em** in the lockups, replacing 1.06em. CSS
+>   letter-spacing trails the last letter, so at 1.06em PROTOCOL stopped short
+>   of STEADFAST. The flush value depends on the size pair: the website uses
+>   1.181em at 11.2px (navbar md+) and 1.132em at 9.6px (footer and mobile).
+>
+> Lockup wordmarks are Sora converted to outlines, so the files carry no font
+> dependency; Sora is SIL OFL and the licence travels in `source/`. The
+> generator (`source/sp-emblem-build.py`) reproduces all five files. QA for this
+> release is in `qa/v2.2/`. `favicon.svg` was not rebuilt: it has its own
+> small-size tuning and faceting is invisible at 16–32px.
+
 > **v2.1 is a documentation patch.** No artwork, geometry, colour value, cutoff
 > or file changed from v2.0. This release restores the typography system,
 > symbolism table and artwork governance rules that were present in v1.0 but

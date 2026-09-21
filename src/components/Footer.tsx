@@ -36,7 +36,9 @@ export default function Footer() {
                                 <span className="font-display text-xl font-bold tracking-[0.08em] text-text">
                                     STEADFAST
                                 </span>
-                                <span className="font-display text-[0.6rem] font-medium tracking-[1.02em] text-signal mt-1">
+                                {/* 1.132em: PROTOCOL ink flush with STEADFAST at the footer's
+                                    20px / 9.6px size pair (see Navbar for the md+ value). */}
+                                <span className="font-display text-[0.6rem] font-medium tracking-[1.132em] text-signal mt-1">
                                     PROTOCOL
                                 </span>
                             </span>

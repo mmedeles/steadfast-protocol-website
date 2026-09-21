@@ -101,7 +101,11 @@ export default function Navbar() {
                             <span className="font-display text-xl font-bold tracking-[0.08em] text-text md:text-2xl">
                                 STEADFAST
                             </span>
-                            <span className="font-display text-[0.6rem] font-medium tracking-[1.02em] text-signal mt-1 md:text-[0.7rem] md:tracking-[1.06em]">
+                            {/* Tracking is solved per size so PROTOCOL's ink ends flush with
+                                STEADFAST's: 1.132em at 9.6px (mobile), 1.181em at 11.2px (md+).
+                                CSS letter-spacing also trails the last letter, so the box runs
+                                wider than the ink. */}
+                            <span className="font-display text-[0.6rem] font-medium tracking-[1.132em] text-signal mt-1 md:text-[0.7rem] md:tracking-[1.181em]">
                                 PROTOCOL
                             </span>
                         </span>
