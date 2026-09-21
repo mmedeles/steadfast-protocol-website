@@ -15,7 +15,7 @@ live in `public/` (see "What the site serves" below). Current artwork is
 | `favicons/` | Favicon pixel masters: 16, 32 and 48 PNG. Each size is independently authored — never resample one from another. |
 | `source/` | Canonical masters (`sp-master-emblem.svg`, `-norope`, `-expressive`), the generator `sp-emblem-build.py`, and the Sora OFL licence. |
 | `docs/` | The brand guide. Carries the v2.1 document plus the v2.2 changelog at the top. |
-| `qa/` | `v2.2/` holds the drop's report, before/after comparisons and the family sheet. The loose `QA-REPORT*` and `SHA256-MANIFEST.json` files describe v2.1 artwork and are stale. |
+| `qa/` | `v2.2/` holds the drop's report, before/after comparisons and the family sheet. |
 | `archive/` | `v2.1-traced/` — the superseded bitmap-trace artwork, kept for reference. `v1/` — v1-era artwork on the old off-palette gradient. |
 
 ## Colour
