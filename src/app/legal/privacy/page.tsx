@@ -14,7 +14,7 @@ const sections = [
     },
     {
         heading: "Information We Collect",
-        body: "When you contact us through the contact form, you give us your name and email address, and optionally your company name, the topic of your inquiry, and your message. The same applies if you email or call us directly. We don't ask for more than we need to respond, and we don't collect information about you from other sources.",
+        body: "When you contact us through the contact form, you give us your name and email address, and optionally your company name, the topic of your inquiry, and your message. The same applies if you email or call us directly. We don't ask for more than we need to respond, and we don't collect information about you from other sources. The form is handled by Formspree, a third-party service that receives your submission and passes it on to us by email; their own privacy policy covers what they do with it while it's in their hands.",
     },
     {
         heading: "Analytics and Cookies",

@@ -27,7 +27,7 @@ export default function FounderBio() {
                     (roughly 4:5, e.g. 800×1000) when one is available. */}
                 <div className="mx-auto aspect-[4/5] w-full max-w-xs rounded-lg border border-line bg-surface p-3 md:mx-0 md:max-w-none">
                     <div className="flex h-full flex-col items-center justify-center gap-2 rounded-md border border-dashed border-line bg-surface-2 text-center">
-                        <p className="font-mono text-sm text-signal">// photo</p>
+                        <p className="font-mono text-sm text-signal">{"// photo"}</p>
                         <p className="font-mono text-sm text-text">[PORTRAIT, 4:5]</p>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ export default function FounderBio() {
                 </div>
 
                 <div className="mt-8 border-t border-line pt-6">
-                    <p className="font-mono text-sm text-signal">// focus</p>
+                    <p className="font-mono text-sm text-signal">{"// focus"}</p>
                     <ul className="mt-4 grid gap-x-8 gap-y-2 text-sm text-text sm:grid-cols-2">
                         {focus.map((item) => (
                             <li key={item} className="flex items-baseline gap-2">

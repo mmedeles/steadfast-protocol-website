@@ -22,7 +22,7 @@ export default function LegalPage({
             <main>
                 <section className="mx-auto max-w-3xl px-6 pt-20 pb-12">
                     <FadeIn>
-                        <p className="font-mono text-sm text-text">// legal</p>
+                        <p className="font-mono text-sm text-text">{"// legal"}</p>
                         <h1 className="mt-4 font-display text-4xl font-semibold text-text md:text-5xl">
                             {title}
                         </h1>

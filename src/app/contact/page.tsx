@@ -39,9 +39,7 @@ export default function Contact() {
                         <div className="grid gap-8 lg:grid-cols-5 lg:gap-10">
                             <FadeIn className="lg:col-span-3">
                                 <div className="rounded-lg border border-line bg-surface p-6 md:p-8">
-                                    <p className="font-mono text-sm text-signal">
-                                        // send a message
-                                    </p>
+                                    <p className="font-mono text-sm text-signal">{"// send a message"}</p>
                                     <h2 className="mt-3 font-display text-xl text-text md:text-2xl">
                                         What are you trying to build?
                                     </h2>
@@ -54,9 +52,7 @@ export default function Contact() {
                             <div className="flex flex-col gap-6 lg:col-span-2">
                                 <FadeIn delay={0}>
                                     <div className="rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-sm text-signal">
-                                            // book a call
-                                        </p>
+                                        <p className="font-mono text-sm text-signal">{"// book a call"}</p>
                                         <p className="mt-3 text-sm text-muted">
                                             Prefer to talk first? Book a free 30-minute
                                             discovery call — in person if you&apos;re near
@@ -73,9 +69,7 @@ export default function Contact() {
 
                                 <FadeIn delay={0.1}>
                                     <div className="rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-sm text-signal">
-                                            // direct contact
-                                        </p>
+                                        <p className="font-mono text-sm text-signal">{"// direct contact"}</p>
                                         <div className="mt-4 space-y-4">
                                             <a
                                                 href="mailto:mmedeles@steadfastprotocol.com"
@@ -111,9 +105,7 @@ export default function Contact() {
 
                                 <FadeIn delay={0.2}>
                                     <div className="rounded-lg border border-line bg-surface p-6">
-                                        <p className="font-mono text-sm text-signal">
-                                            // based in
-                                        </p>
+                                        <p className="font-mono text-sm text-signal">{"// based in"}</p>
                                         <p className="mt-3 flex items-start gap-2 text-sm text-muted">
                                             <MapPin size={20} className="mt-0.5 shrink-0 text-muted" />
                                             <span>

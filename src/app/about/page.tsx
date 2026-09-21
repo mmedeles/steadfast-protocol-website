@@ -48,8 +48,8 @@ export default function About() {
                     </FadeIn>
                     <p className="mt-6 text-base text-muted md:text-lg">
                         Steadfast Protocol exists for the gap between a working demo and
-                        tools people actually depend on. That's the bar we build to on
-                        every project, whether it's custom software, AI tooling, or
+                        tools people actually depend on. That&apos;s the bar we build to on
+                        every project, whether it&apos;s custom software, AI tooling, or
                         workflow automation.
                     </p>
                 </section>
@@ -106,7 +106,7 @@ export default function About() {
                         <p className="mt-4 text-base text-muted md:text-lg">
                             A real conversation up front, a clear written plan, and regular
                             check-ins while the work happens. No surprise invoices, no
-                            disappearing for weeks. We're based in Bismarck and work with
+                            disappearing for weeks. We&apos;re based in Bismarck and work with
                             clients across North Dakota, in person or remote.
                         </p>
                     </div>
@@ -116,11 +116,11 @@ export default function About() {
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
                             <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
-                                Think we'd be a good fit?
+                                Think we&apos;d be a good fit?
                             </h2>
                         </FadeIn>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            Let's talk about what you're building.
+                            Let&apos;s talk about what you&apos;re building.
                         </p>
                         <Link
                             href="/contact"

@@ -60,14 +60,9 @@ export default function ConnectionTerminal() {
     const [finished, setFinished]   = useState(false);
 
     useEffect(() => {
-        if (prefersReducedMotion) {
-            setLineIndex(LAST_INDEX);
-            setCharIndex(typedLines[LAST_INDEX].text.length);
-            setFinished(true);
-            return;
-        }
-
-        if (finished) return;
+        // Reduced motion needs no state write: the finished frame is derived
+        // below, so the effect simply stays inert.
+        if (prefersReducedMotion || finished) return;
 
         const currentLine = typedLines[lineIndex];
         const isLastLine = lineIndex === LAST_INDEX;
@@ -93,6 +88,12 @@ export default function ConnectionTerminal() {
         return () => clearTimeout(t);
     }, [charIndex, lineIndex, finished, prefersReducedMotion]);
 
+    // Derived, not stored: with reduced motion the terminal renders its
+    // finished frame straight away and never animates.
+    const shownLine = prefersReducedMotion ? LAST_INDEX : lineIndex;
+    const shownChar = prefersReducedMotion ? typedLines[LAST_INDEX].text.length : charIndex;
+    const isComplete = prefersReducedMotion || finished;
+
     return (
         <div className="rounded-lg border border-line bg-surface font-mono text-sm shadow-lg shadow-black/20">
             <div className="flex items-center justify-between border-b border-line px-4 py-3">
@@ -105,18 +106,18 @@ export default function ConnectionTerminal() {
 
             <div className="space-y-1.5 px-4 py-5 text-muted">
                 {typedLines.map((line, i) => {
-                    if (i > lineIndex) return null;
+                    if (i > shownLine) return null;
 
                     const isLastLine = i === LAST_INDEX;
-                    const isActive = i === lineIndex && !finished;
-                    const isTyping = isActive && charIndex < line.text.length;
-                    const showCursor = isActive || (finished && isLastLine);
-                    const cursorBlinks = isTyping || (finished && isLastLine);
+                    const isActive = i === shownLine && !isComplete;
+                    const isTyping = isActive && shownChar < line.text.length;
+                    const showCursor = isActive || (isComplete && isLastLine);
+                    const cursorBlinks = isTyping || (isComplete && isLastLine);
 
                     return (
                         <p key={line.text} className={isLastLine ? "pt-2 text-text" : undefined}>
                             {isTyping ? (
-                                <span>{line.text.slice(0, charIndex)}</span>
+                                <span>{line.text.slice(0, shownChar)}</span>
                             ) : (
                                 line.segments.map((seg, si) => (
                                     <span key={si} className={seg.className}>

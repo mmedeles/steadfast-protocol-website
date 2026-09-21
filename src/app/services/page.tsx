@@ -148,7 +148,7 @@ export default function Services() {
                     <p className="mt-6 text-base text-muted md:text-lg">
                         Steadfast Protocol builds custom software, AI tooling, and workflow
                         automation for teams who need their systems to hold up — whether
-                        you're shipping a first product or replacing a process that's
+                        you&apos;re shipping a first product or replacing a process that&apos;s
                         outgrown spreadsheets and workarounds.
                     </p>
                 </section>
