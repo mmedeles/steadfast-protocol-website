@@ -1,5 +1,11 @@
 import FadeIn from "@/components/FadeIn";
 
+// The bio below is still placeholder copy in [BRACKETS], so the whole
+// section is hidden on the About page. Fill in the bio and focus lists,
+// drop a portrait into the photo slot, then flip this to true — nothing
+// else needs changing.
+export const SHOW_FOUNDER_BIO = false;
+
 // PLACEHOLDER COPY — everything in [BRACKETS] must be personalized by the
 // owner before launch. Nothing specific here (years, domains, credentials)
 // is a fact until it's filled in; delete any line that doesn't apply.

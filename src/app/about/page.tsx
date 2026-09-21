@@ -3,7 +3,7 @@ import { Shield, Eye, Handshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
-import FounderBio from "@/components/FounderBio";
+import FounderBio, { SHOW_FOUNDER_BIO } from "@/components/FounderBio";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +12,11 @@ export const metadata = pageMetadata({
         "Steadfast Protocol builds software meant to hold up under real-world use, not just impress in a demo.",
     path: "/about",
 });
+
+// Sections alternate between plain and tinted. Which one a section gets
+// depends on whether the bio sits above it, so the rhythm holds either way.
+const plain = "border-t border-line";
+const tinted = "border-t border-line bg-surface/40";
 
 const principles = [
     {
@@ -54,19 +59,21 @@ export default function About() {
                     </p>
                 </section>
 
-                <section className="border-t border-line bg-surface/40">
-                    <div className="mx-auto max-w-6xl px-6 py-20">
-                        <FadeIn>
-                            <p className="font-mono text-sm text-text">who you&apos;re working with</p>
-                            <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
-                                Hi, I&apos;m [NAME].
-                            </h2>
-                        </FadeIn>
-                        <FounderBio />
-                    </div>
-                </section>
+                {SHOW_FOUNDER_BIO && (
+                    <section className={tinted}>
+                        <div className="mx-auto max-w-6xl px-6 py-20">
+                            <FadeIn>
+                                <p className="font-mono text-sm text-text">who you&apos;re working with</p>
+                                <h2 className="mt-3 font-display text-2xl font-semibold text-text md:text-3xl">
+                                    Hi, I&apos;m [NAME].
+                                </h2>
+                            </FadeIn>
+                            <FounderBio />
+                        </div>
+                    </section>
+                )}
 
-                <section className="border-t border-line">
+                <section className={SHOW_FOUNDER_BIO ? plain : tinted}>
                     <div className="mx-auto max-w-6xl px-6 py-20">
                         <FadeIn>
                             <p className="font-mono text-sm text-text">principles</p>
@@ -96,7 +103,7 @@ export default function About() {
                     </div>
                 </section>
 
-                <section className="border-t border-line bg-surface/40">
+                <section className={SHOW_FOUNDER_BIO ? tinted : plain}>
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
                             <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
@@ -112,7 +119,7 @@ export default function About() {
                     </div>
                 </section>
 
-                <section className="border-t border-line">
+                <section className={SHOW_FOUNDER_BIO ? plain : tinted}>
                     <div className="mx-auto max-w-3xl px-6 py-20 text-center">
                         <FadeIn>
                             <h2 className="font-display text-2xl font-semibold text-text md:text-3xl">
