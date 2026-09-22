@@ -222,8 +222,8 @@ export default function Home() {
                             based in Bismarck, ND
                         </div>
                         <p className="mt-4 text-base text-muted md:text-lg">
-                            We’re in Bismarck, North Dakota — not a far-off “tech hub.” We
-                            work with clients across the state, in person or fully remote.
+                            We’re in Bismarck, North Dakota, not a far-off “tech hub.” We
+                            work with clients across the country, in person or fully remote.
                         </p>
                     </div>
                 </section>
